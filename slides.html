@@ -38,6 +38,15 @@ class: middle, center, title-slide
 
 ---
 
+## Hemsida
+
+En hemsida för workshopen finns på
+[https://stat-lu.github.io/workshop-lulib/](https://stat-lu.github.io/workshop-lulib/).
+
+Där finns även dataseten vi kommer använda idag.
+
+---
+
 ## Varför visualisera data?
 
 - Visualisering är vårt främsta verktyg för att förstå data.
@@ -196,8 +205,12 @@ färg
 #### Mätvärde
 
 transformation (antal, summa, medelvärde)
-]
 
+
+#### STIL-fliken
+
+ändra mellan grupperade och staplade diagram, riktning, och byt färg
+]
 
 .pull-right[
 &lt;img src="images/stapeldiagram.png" width="80%" style="display: block; margin: auto;" /&gt;
@@ -220,13 +233,13 @@ mellan könen och de olika klasserna på fartyget.
 
 Vad är era slutsatser?
 
-Tips: Enklaste sättet att byta mellan diagramtyper är via *STIL*-fliken.
-
-#### Bonusuppgift
+#### Bonusuppgifter
 
 - Ändra färg på staplarna och byt från liggande till stående staplar.
 - Gör enskilda diagram för de olika passagerarklasserna via *Filter* och 
   visualisera uppdelningen mellan kön inom varje.
+- Gå in i datasetet i *Google Kalkylark* och gör en ny variabel av
+  åldersgrupper och använd den i visualiseringarna.
 
 ---
 
@@ -303,14 +316,14 @@ Välj *Lägg till ett diagram* följt av *spridningsdiagram*.
 Vad är slutsatserna? Hur ser sambanden ut mellan kroppsvikt, hjärnvikt och
 sömn?
 
-#### Bonusuppgift
+#### Bonusuppgifter
 
 - Gör ett bubbeldiagram genom att koppla en variabel till 
   *Värde för bubbelstorlek*. Hur lätt är det att avläsa värdena från 
   bubblorna?
 - Aggregera data över matvanor (`vore`), `genus`, eller `order` genom att
   byta variabel i *Dimension*.
-  - Ändra `SUM` brevid variabeln till något rimligare.
+  - Ändra `SUM` brevid variabeln till något annat, exempelvis medelvärde.
 
 ---
 
@@ -444,11 +457,74 @@ Kopplingen mellan varje nod (relatedness) bestäms av ett mått:
 - Co-citation
 ]
 
+--- 
+
+### Typer av Input
+
+Vilka diagram vi kan göra styrs av vilken typ av data ni har. 
+
+Flest möjligheter får man om det finns fullständig bibliometrisk data,
+inklusive citeringar och referenser. Scopus- och Web of Science-exporter
+är därför att föredra.
+
 ---
 
-### Uppgift 5: 
+### Ett första diagram i VOSviewer
 
-Gå till workshopshemsidan och ladda ner datasetet `library.ris`.
+&lt;img src="images/vosviewer.gif" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Uppgift 5: RIS-input
+
+Gå till workshopshemsidan och ladda ner datasetet `library.ris`, eller
+använd ett eget dataset.
+
+#### Huvuduppgifter
+
+- Gör ett **co-authorship**-diagram baserat på den bibliometriska datan.
+- Gör ett **co-occurence**-diagram baserat på abstract-datan. Använd
+  *Binary Counting*.
+- Testa både *Network Visualization* och *Overlay Visualization*
+- Spara det färdiga diagrammet
+- Exportera det som en figur via *Screenshot* under *File*-fliken.
+  
+#### Bonusuppgifter
+
+- Ändra *Weights* under *Visualization* i höger sidfält.
+- Experimentera med inställningarna under *Analysis*-fliken.
+- Ändra de estetiska inställningarna (färger m.m.) för diagrammet
+
+---
+
+### Exportera data från Scopus
+
+&lt;img src="images/scopus-export.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Diagram baserat på Scopus-data
+
+&lt;img src="images/vosviewer-scopus.gif" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Uppgift 6: 
+
+Gå till workshophemsidan och ladda ner datasetet `scopus-kemicentrum.csv` eller
+använd en egen export, eller gå till Scopus och gör en ny sökning.
+
+#### Huvuduppgifter
+
+- Skapa ett *Citation*-diagram och använd *Countries* som nod (Unit of Analysis).
+- Skapa ett *Biobliographic Coupling*-diagram och använd *Authors* som nod.
+
+#### Bonusuppgifter
+
+- Experimentera med de andra typerna av diagram.
+- Experimentera med inställningarna under *Analysis*-fliken.
+
+
 
 
 
