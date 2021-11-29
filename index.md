@@ -5,7 +5,7 @@ at Lund University.
 
 ### Slides
 
-Slides are located [here](/slides/).
+Slides are located [here](https://stat-lu.github.io/workshop-lulib/slides).
 
 ### Data Sets
 
