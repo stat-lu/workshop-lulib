@@ -5,8 +5,7 @@ at Lund University.
 
 ### Slides
 
-Slides are located [here]().
-
+Slides are located [here](/slides/).
 
 ### Data Sets
 
