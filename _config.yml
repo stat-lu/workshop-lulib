@@ -1,4 +1,7 @@
 theme: jekyll-theme-minimal
 
+title: Dataviz Workshop
+description: Workshop in dataviz for librarians at LU
+
 locale: en_US
 logo: images/avatar.png
