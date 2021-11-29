@@ -2,7 +2,7 @@
 title: "Workshop i Datavisualisering"
 author: "Johan Larsson"
 institute: "Statistiska institutionen, Lunds Universitet"
-date: ""
+date: "30 November, 2021"
 output:
   xaringan::moon_reader:
     css: [default, "assets/styles.css"]
