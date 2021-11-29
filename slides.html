@@ -41,7 +41,7 @@ class: middle, center, title-slide
 ## Hemsida
 
 En hemsida för workshopen finns på
-[https://stat-lu.github.io/workshop-lulib/](https://stat-lu.github.io/workshop-lulib/).
+[stat-lu.github.io/workshop-lulib/](https://stat-lu.github.io/workshop-lulib/).
 
 Där finns även dataseten vi kommer använda idag.
 
@@ -49,7 +49,13 @@ Där finns även dataseten vi kommer använda idag.
 
 ## Varför visualisera data?
 
-- Visualisering är vårt främsta verktyg för att förstå data.
+Visualisering är vårt främsta verktyg för att förstå data!
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/napoleon.png" alt="Charles Minards visualisering över Napoleons frammarsch och nederlag i Ryssland" width="853" /&gt;
+&lt;p class="caption"&gt;Charles Minards visualisering över Napoleons frammarsch och nederlag i Ryssland&lt;/p&gt;
+&lt;/div&gt;
+
 
 ---
 
@@ -66,7 +72,7 @@ Där finns även dataseten vi kommer använda idag.
 
 .pull-right[
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="slides_files/figure-html/unnamed-chunk-1-1.png" alt="Fuel Consumption in miles per gallon and horsepower for a set of cars from the 1974 Motor Trend US magazine." width="345.6" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-2-1.png" alt="Fuel Consumption in miles per gallon and horsepower for a set of cars from the 1974 Motor Trend US magazine." width="345.6" /&gt;
 &lt;p class="caption"&gt;Fuel Consumption in miles per gallon and horsepower for a set of cars from the 1974 Motor Trend US magazine.&lt;/p&gt;
 &lt;/div&gt;
 ]
@@ -89,8 +95,6 @@ Där finns även dataseten vi kommer använda idag.
 --
 
 - Använd "bläcket" på **data**
-
-
 
 ---
  
@@ -139,19 +143,21 @@ och kontinuerlig (reell) data
 
 ## Google Data Studio
 
+&lt;https://datastudio.google.com&gt;
+
 Enkelt och gratis men inte speciellt kraftfullt.
 
 Mer seriösa projekt kräver mer avancerade program, exempelvis R (ggplot2),
 Julia, eller python (matplotlib).
 
+--
 
 ### Exempel: Titanic
 
 Vem överlevde Titanics haveri?
 
-Ladda ner `titanic.csv` från workshop-hemsidan
-[stat-lu.github.io/lu-workshop](stat-lu.github.io/lu-workshop) och importera in
-i Google Kalkylark (Sheets).
+Ladda ner `titanic.csv` från [workshop-hemsidan](https://stat-lu.github.io/workshop-lulib/)
+och importera in i [Google Kalkylark (Sheets)](https://sheets.google.com).
 
 &lt;img src="images/titanic.png" width="355" style="display: block; margin: auto;" /&gt;
 
@@ -177,7 +183,7 @@ För varje variabel (kolumn) beskriv vilket **skalnivå** de har.
 - Enkelt, lättförståeligt
 - Visualiserar **antal** eller **proportioner**
 
-&lt;img src="slides_files/figure-html/unnamed-chunk-6-1.png" width="237.6" style="display: block; margin: auto;" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-7-1.png" width="237.6" style="display: block; margin: auto;" /&gt;
 
 ### Olika typer
 
@@ -250,18 +256,18 @@ Vad är era slutsatser?
   om det finns ett tydligt "utfall", placera det på y-axeln.
   
 .pull-left[
-&lt;img src="slides_files/figure-html/unnamed-chunk-9-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-10-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
-&lt;img src="slides_files/figure-html/unnamed-chunk-10-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-11-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
 
 ### Numerisk data: Däggdjur, hjärnstorlek och sömn
 
-- Gå till workshopshemsidan och ladda ner datasetet `mammals.csv`.
+- Gå till [workshopshemsidan](https://stat-lu.github.io/workshop-lulib/) och ladda ner datasetet `mammals.csv`.
 - Importera det till Google Sheets
 - Importera det till Google Data Studio
 
@@ -333,7 +339,7 @@ Data har ofta en spatiell dimension, utnyttja det!
 
 .pull-left[
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="slides_files/figure-html/unnamed-chunk-12-1.png" alt="Choropleth" width="345.6" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-13-1.png" alt="Choropleth" width="345.6" /&gt;
 &lt;p class="caption"&gt;Choropleth&lt;/p&gt;
 &lt;/div&gt;
 
@@ -341,17 +347,17 @@ Data har ofta en spatiell dimension, utnyttja det!
 
 .pull-right[
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="slides_files/figure-html/unnamed-chunk-13-1.png" alt="Bubbeldiagram" width="345.6" /&gt;
+&lt;img src="slides_files/figure-html/unnamed-chunk-14-1.png" alt="Bubbeldiagram" width="345.6" /&gt;
 &lt;p class="caption"&gt;Bubbeldiagram&lt;/p&gt;
 &lt;/div&gt;
-
 ]
 
 ---
 
 ### Spatiell data: Fall av CoViD-19 i Europa
 
-- Gå till workshopshemsidan och ladda ner datasetet `covid.csv`.
+- Gå till [workshopshemsidan](https://stat-lu.github.io/workshop-lulib/)
+  och ladda ner datasetet `covid.csv`.
 - Importera det till Google Sheets
 - Importera det till Google Data Studio
 
@@ -422,33 +428,84 @@ filtrera ut ett datumintervall
 
 ## Nätverksdiagram
 
-Nätverksdiagram för bibliometrisk data: [VOSviewer](https://www.vosviewer.com)
+Ett nätverksdiagram är uppbyggt av **noder** och **länkar**.
 
-### Input
+Avståndet mellan noderna anger hur nära kopplade de är.
 
-- text (abstract, titlar)
-- bibliometrisk data (författare, citeringar, referenser, etc.)
-
---
+Noderna kan delas in i **kluster**.
 
 .pull-left[
-### Noder (Unit of Analysis)
+### Noder
 
-Varje nätverksdiagram är byggt upp av *noder*. Noden i diagrammet kan utgöras
-av olika objekt, exempelvis:
+Det som är fokus i analysen, exempelvis
 
 - författare
 - organisation
 - artikel
 - land
+
+Varje nod kan ha en **vikt** (storlek) och eventuellt
+ett **score** (färg).
 ]
 
---
+.pull-right[
+### Länkar
+
+Oftast representerat av en linje. En länk mellan två noder betyer
+att noderna är relaterade.
+
+Länken har ofta en **vikt** (tjocklek), som beskriver hur stark kopplingen är.
+
+]
+
+
+
+---
+
+### VOSviewer
+
+Programmet vi använder oss av här. Gratis att nedladda från
+[https://www.vosviewer.com](https://www.vosviewer.com).
+
+.pull-left[
+#### Diagram
+
+- Network Visualization
+- Overlay Visualization
+- *Density Visualization*
+]
 
 .pull-right[
-### Relatedness
+#### Input
 
-Kopplingen mellan varje nod (relatedness) bestäms av ett mått:
+- text-data (abstract, titlar)
+- bibliometrisk data
+  - export från referenshanterare (Zotero, EndNot, etc.)
+  - export från Scopus, Web of Science, m.m.
+  - *API till Scopus, Web of Science, m.m.*
+]
+
+---
+
+### Network Visualization
+
+&lt;img src="images/network-visualization.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Overlay Visualization
+
+&lt;img src="images/overlay-visualization.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Interface i VOSviewer
+
+.pull-left[
+#### Type of Analysis
+
+Bestämmer hur **relatedness** (koppling mellan noderna) ska beräknas (och
+vilka **units of analysis** som är möjliga.)
 
 - Co-authorship
 - Co-occurence
@@ -457,15 +514,26 @@ Kopplingen mellan varje nod (relatedness) bestäms av ett mått:
 - Co-citation
 ]
 
---- 
+--
 
-### Typer av Input
+.pull-right[
+#### Unit of Analysis
 
-Vilka diagram vi kan göra styrs av vilken typ av data ni har. 
+Bestämmer vad varje nod ska bestå av.
 
-Flest möjligheter får man om det finns fullständig bibliometrisk data,
-inklusive citeringar och referenser. Scopus- och Web of Science-exporter
-är därför att föredra.
+- författare
+- organisation
+- artikel
+- land
+- keyword
+]
+
+--
+
+#### Counting Method
+
+- full
+- fractional
 
 ---
 
@@ -477,8 +545,9 @@ inklusive citeringar och referenser. Scopus- och Web of Science-exporter
 
 ### Uppgift 5: RIS-input
 
-Gå till workshopshemsidan och ladda ner datasetet `library.ris`, eller
-använd ett eget dataset.
+Gå till [workshopshemsidan](https://stat-lu.github.io/workshop-lulib/)
+och ladda ner datasetet `library.ris` (eller
+använd ett eget dataset).
 
 #### Huvuduppgifter
 
@@ -486,6 +555,7 @@ använd ett eget dataset.
 - Gör ett **co-occurence**-diagram baserat på abstract-datan. Använd
   *Binary Counting*.
 - Testa både *Network Visualization* och *Overlay Visualization*
+- Försök förklara de olika mönstrena som dyker upp
 - Spara det färdiga diagrammet
 - Exportera det som en figur via *Screenshot* under *File*-fliken.
   
@@ -511,25 +581,36 @@ använd ett eget dataset.
 
 ### Uppgift 6: 
 
-Gå till workshophemsidan och ladda ner datasetet `scopus-kemicentrum.csv` eller
-använd en egen export, eller gå till Scopus och gör en ny sökning.
+Gå till [workshophemsidan](https://stat-lu.github.io/workshop-lulib/)
+och ladda ner datasetet `scopus-kemicentrum.csv`, använd
+en egen export, eller gå till
+[Scopus](https://www-scopus-com.ludwig.lub.lu.se/search/form.uri?display=basic)
+och gör en ny sökning.
 
 #### Huvuduppgifter
 
 - Skapa ett *Citation*-diagram och använd *Countries* som nod (Unit of Analysis).
 - Skapa ett *Biobliographic Coupling*-diagram och använd *Authors* som nod.
+- Försök beskriva och förklara mönstrena som dyker upp.
 
 #### Bonusuppgifter
 
-- Experimentera med de andra typerna av diagram.
+- Experimentera med olika kombinationer av analys-typ (relatedness-värden) och
+  noder (units of analysis).
 - Experimentera med inställningarna under *Analysis*-fliken.
 
+---
 
+## Tack för idag!
 
+Hör gärna av er till [johan.larsson@stat.lu.se](mailto:johan.larsson@stat.lu.se)
+om ni har några ytterligare funderingar (eller feedback)!
 
+### Data Visualization
 
+4.5 hp i datavisualisering med R och ggplot2.
 
-
+&lt;https://stat.lu.se/utbildning/kurser/stae04_visualisering_av_data&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
