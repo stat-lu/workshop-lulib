@@ -22,4 +22,4 @@ Right-click on each link and use "save as" to download.
 ### Source code
 
 The source code for all of the material here can be found at
-<https://github.com/stat-lu/dataviz>.
+<https://github.com/stat-lu/workshop-lulib>.
