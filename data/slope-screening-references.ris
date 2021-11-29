@@ -1,0 +1,1381 @@
+TY  - JOUR
+TI  - SLOPE is adaptive to unknown sparsity and asymptotically minimax
+AU  - Su, Weijie
+AU  - Candès, Emmanuel
+T2  - The Annals of Statistics
+AB  - We consider high-dimensional sparse regression problems in which we observe y=Xβ+zy=Xβ+z\mathbf{y}=\mathbf{X}\boldsymbol{\beta} +\mathbf{z}, where XX\mathbf{X} is an n×pn×pn\times p design matrix and zz\mathbf{z} is an nnn-dimensional vector of independent Gaussian errors, each with variance σ2σ2\sigma^{2}. Our focus is on the recently introduced SLOPE estimator [Ann. Appl. Stat. 9 (2015) 1103–1140], which regularizes the least-squares estimates with the rank-dependent penalty ∑1≤i≤pλi|βˆ|(i)∑1≤i≤pλi|β^|(i)\sum_{1\le i\le p}\lambda_{i}|\widehat{\beta} |_{(i)}, where |βˆ|(i)|β^|(i)|\widehat{\beta} |_{(i)} is the iiith largest magnitude of the fitted coefficients. Under Gaussian designs, where the entries of XX\mathbf{X} are i.i.d. N(0,1/n)N(0,1/n)\mathcal{N}(0,1/n), we show that SLOPE, with weights λiλi\lambda_{i} just about equal to σ⋅Φ−1(1−iq/(2p))σ⋅Φ−1(1−iq/(2p))\sigma\cdot\Phi^{-1}(1-iq/(2p)) [Φ−1(α)Φ−1(α)\Phi^{-1}(\alpha) is the αα\alphath quantile of a standard normal and qqq is a fixed number in (0,1)(0,1)(0,1)] achieves a squared error of estimation obeying sup∥β∥0≤kP(∥βˆSLOPE−β∥2>(1+ε)2σ2klog(p/k))⟶0sup‖β‖0≤kP(‖β^SLOPE−β‖2>(1+ε)2σ2klog⁡(p/k))⟶0\sup_{\|\boldsymbol{\beta} \|_{0}\le k}\mathbb{P} (\|\widehat{\boldsymbol {\beta}}_{\mathrm{SLOPE}}-\boldsymbol{\beta} \|^{2}>(1+\varepsilon) 2\sigma^{2}k\log(p/k))\longrightarrow 0 as the dimension ppp increases to ∞∞\infty, and where ε>0ε>0\varepsilon >0 is an arbitrary small constant. This holds under a weak assumption on the ℓ0ℓ0\ell_{0}-sparsity level, namely, k/p→0k/p→0k/p\rightarrow 0 and (klogp)/n→0(klog⁡p)/n→0(k\log p)/n\rightarrow 0, and is sharp in the sense that this is the best possible error any estimator can achieve. A remarkable feature is that SLOPE does not require any knowledge of the degree of sparsity, and yet automatically adapts to yield optimal total squared errors over a wide range of ℓ0ℓ0\ell_{0}-sparsity classes. We are not aware of any other estimator with this property.
+DA  - 2016/06//
+PY  - 2016
+DO  - 10.1214/15-AOS1397
+DP  - Project Euclid
+VL  - 44
+IS  - 3
+SP  - 1038
+EP  - 1068
+J2  - Ann. Statist.
+LA  - EN
+SN  - 0090-5364
+UR  - https://projecteuclid.org/euclid.aos/1460381686
+Y2  - 2019/05/23/12:16:27
+L2  - https://projecteuclid.org/euclid.aos/1460381686
+KW  - adaptivity
+KW  - Benjamini–Hochberg procedure
+KW  - false discovery rate (FDR)
+KW  - FDR thresholding
+KW  - SLOPE
+KW  - sparse regression
+ER  - 
+
+TY  - RPRT
+TI  - Safe feature elimination in sparse supervised learning
+AU  - El Ghaoui, Laurent
+AU  - Viallon, Vivian
+AU  - Rabbani, Tarek
+AB  - We investigate fast methods that allow to quickly eliminate variables (features) in supervised learning problems involving a convex loss function and a l₁-norm penalty, leading to a potentially substantial reduction in the number of variables prior to running the supervised learning algorithm. The methods are not heuristic: they only eliminate features that are <i>guaranteed</i> to be absent after solving the learning problem. Our framework applies to a large class of problems, including support vector machine classification, logistic regression and least-squares. The complexity of the feature elimination step is negligible compared to the typical computational effort involved in the sparse supervised learning problem: it grows linearly with the number of features times the number of examples, with much better count if data is sparse. We apply our method to data sets arising in text classification and observe a dramatic reduction of the dimensionality, hence in computational effort required to solve the learning problem, especially when very sparse classifiers are sought. Our method allows to immediately extend the scope of existing algorithms, allowing us to run them on data sets of sizes that were out of their reach before.
+CY  - Berkeley
+DA  - 2010/09/21/
+PY  - 2010
+PB  - EECS Department, University of California
+SN  - UCB/EECS-2010-126
+UR  - http://www.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-126.html
+L1  - https://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-126.pdf
+ER  - 
+
+TY  - JOUR
+TI  - On model selection consistency of the elastic net when p >> n
+AU  - Jia, J.
+AU  - Yu, B.
+T2  - Statistica Sinica
+AB  - We study the model selection property of the Elastic Net. In the classical settings when p (the number of predictors) and q (the number of predictors with non-zero coefficients in the true linear model) are fixed, Yuan and Lin (2007) give a necessary and sufficient condition for the Elastic Net to consistently select the true model. They showed that it consistently selects the true model if and only if there exist suitable sequences λ1 (n) and λ2 (n) that satisfy EIC (which is defined later in the paper). Here we study the general case when p, q, and n all go to infinity. For general scalings of p, q, and n, when gaussian noise is assumed, sufficient conditions are given such that EIC guarantees the Elastic Net's model selection consistency. We show that to make these conditions hold, n should grow at a rate faster than qlog(p - q). We compare the variable selection performance of the Elastic Net with that of the Lasso. Through theoretical results find simulation studies, we provide insights into when the Elastic Net can consistently select the true model even when the Lasso cannot. We also point out through examples that when the Lasso cannot select the true model, it is very likely that the Elastic Net cannot select the true model either.
+DA  - 2010///
+PY  - 2010
+DP  - Scopus
+VL  - 20
+IS  - 2
+SP  - 595
+EP  - 611
+DB  - Scopus
+L1  - http://www3.stat.sinica.edu.tw.ludwig.lub.lu.se/statistica/oldpdf/A20n27.pdf
+L2  - https://www.scopus.com/record/display.uri?eid=2-s2.0-77953306327&origin=resultslist&sort=plf-f&src=s&st1=On+model+selection+consistency+of+the+elastic+net+when+p+%e2%89%ab+n&st2=&sid=adf488f7f4f626fab68da9cbf2cf1ff6&sot=b&sdt=b&sl=75&s=TITLE-ABS-KEY%28On+model+selection+consistency+of+the+elastic+net+when+p+%e2%89%ab+n%29&relpos=0&citeCnt=30&searchTerm=
+N1  - <p>Cited By :30</p>
+KW  - Elastic irrepresentable condition
+KW  - Elastic net
+KW  - Irrepresentable condition
+KW  - Lasso
+KW  - Model selection consistency
+ER  - 
+
+TY  - JOUR
+TI  - From safe screening rules to working sets for faster Lasso-type solvers
+AU  - Massias, Mathurin
+AU  - Gramfort, Alexandre
+AU  - Salmon, Joseph
+T2  - arXiv:1703.07285 [cs, math, stat]
+AB  - Convex sparsity-promoting regularizations are ubiquitous in modern statistical learning. By construction, they yield solutions with few non-zero coefficients, which correspond to saturated constraints in the dual optimization formulation. Working set (WS) strategies are generic optimization techniques that consist in solving simpler problems that only consider a subset of constraints, whose indices form the WS. Working set methods therefore involve two nested iterations: the outer loop corresponds to the definition of the WS and the inner loop calls a solver for the subproblems. For the Lasso estimator a WS is a set of features, while for a Group Lasso it refers to a set of groups. In practice, WS are generally small in this context so the associated feature Gram matrix can fit in memory. Here we show that the Gauss-Southwell rule (a greedy strategy for block coordinate descent techniques) leads to fast solvers in this case. Combined with a working set strategy based on an aggressive use of so-called Gap Safe screening rules, we propose a solver achieving state-of-the-art performance on sparse learning problems. Results are presented on Lasso and multi-task Lasso estimators.
+DA  - 2017/03/21/
+PY  - 2017
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1703.07285
+Y2  - 2019/06/11/05:43:23
+L1  - http://www.arxiv.org/pdf/1703.07285.pdf
+L2  - https://arxiv.org/abs/1703.07285
+KW  - Mathematics - Optimization and Control
+KW  - Computer Science - Machine Learning
+KW  - Statistics - Machine Learning
+KW  - Statistics - Computation
+ER  - 
+
+TY  - JOUR
+TI  - Strong rules for discarding predictors in lasso-type problems
+AU  - Tibshirani, Robert
+AU  - Bien, Jacob
+AU  - Friedman, Jerome
+AU  - Hastie, Trevor
+AU  - Simon, Noah
+AU  - Taylor, Jonathan
+AU  - Tibshirani, Ryan J.
+T2  - Journal of the Royal Statistical Society. Series B: Statistical Methodology
+DA  - 2012/03//
+PY  - 2012
+DO  - 10/c4bb85
+DP  - iths.pure.elsevier.com
+VL  - 74
+IS  - 2
+SP  - 245
+EP  - 266
+LA  - English
+SN  - 1369-7412
+UR  - https://iths.pure.elsevier.com/en/publications/strong-rules-for-discarding-predictors-in-lasso-type-problems
+Y2  - 2018/03/16/21:17:26
+L2  - https://iths.pure.elsevier.com/en/publications/strong-rules-for-discarding-predictors-in-lasso-type-problems
+ER  - 
+
+TY  - CONF
+TI  - Result analysis of the NIPS 2003 feature selection challenge
+AU  - Guyon, Isabelle
+AU  - Gunn, Steve
+AU  - Ben-Hur, Asa
+AU  - Dror, Gideon
+T2  - Neural Information Processing Systems 2004
+A2  - Saul, L. K.
+A2  - Weiss, Y.
+A2  - Bottou, L.
+C1  - Vancouver, BC, Canada
+C3  - Advances in neural information processing systems 17
+DA  - 2004/12/13/18
+PY  - 2004
+SP  - 545
+EP  - 552
+PB  - MIT Press
+SN  - 978-0-262-19534-8
+UR  - https://papers.nips.cc/paper/2728-result-analysis-of-the-nips-2003-feature-selection-challenge
+Y2  - 2020/03/02/08:13:22
+L1  - http://papers.nips.cc/paper/2728-result-analysis-of-the-nips-2003-feature-selection-challenge.pdf
+L2  - http://papers.nips.cc/paper/2728-result-analysis-of-the-nips-2003-feature-selection-challenge
+ER  - 
+
+TY  - ELEC
+TI  - UCI machine learning repository
+AU  - Dua, Dheeru
+AU  - Graff, Casey
+T2  - UCI machine learning repository
+DA  - 2019///
+PY  - 2019
+UR  - http://archive.ics.uci.edu/ml
+Y2  - 2021/04/14/07:48:19
+ER  - 
+
+TY  - JOUR
+TI  - Lasso screening rules via dual polytope projection
+AU  - Wang, Jie
+AU  - Wonka, Peter
+AU  - Ye, Jieping
+T2  - Journal of Machine Learning Research
+AB  - Lasso is a widely used regression technique to find sparse representations. When the dimension of the feature space and the number of samples are extremely large, solving the Lasso problem remains challenging. To improve the efficiency of solving large-scale Lasso problems, El Ghaoui and his colleagues have proposed the SAFE rules which are able to quickly identify the inactive predictors, i.e., predictors that have 0 components in the solution vector. Then, the inactive predictors or features can be removed from the optimization problem to reduce its scale. By transforming the standard Lasso to its dual form, it can be shown that the inactive predictors include the set of inactive constraints on the optimal dual solution. In this paper, we propose an efficient and effective screening rule via Dual Polytope Projections (DPP), which is mainly based on the uniqueness and nonexpansiveness of the optimal dual solution due to the fact that the feasible set in the dual space is a convex and closed polytope. Moreover, we show that our screening rule can be extended to identify inactive groups in group Lasso. To the best of our knowledge, there is currently no exact screening rule for group Lasso. We have evaluated our screening rule using synthetic and real data sets. Results show that our rule is more effective in identifying inactive predictors than existing state-of-the-art screening rules for Lasso.
+DA  - 2015/05/15/
+PY  - 2015
+DP  - January 2015
+VL  - 16
+IS  - 1
+SP  - 1063
+EP  - 1101
+SN  - 1532-4435
+L1  - https://dl.acm.org/doi/pdf/10.5555/2789272.2886785
+KW  - lasso
+KW  - dual formulation
+KW  - large-scale optimization
+KW  - polytope projection
+KW  - safe screening
+KW  - sparse regularization
+ER  - 
+
+TY  - JOUR
+TI  - Simple expressions of the LASSO and SLOPE estimators in low-dimension
+AU  - Tardivel, Patrick J. C.
+AU  - Servien, Rémi
+AU  - Concordet, Didier
+T2  - Statistics
+AB  - We study the LASSO and SLOPE estimators when the design X satisfies ker⁡(X)=0. Similarly to the LASSO, the SLOPE estimator has an explicit expression when the design matrix X is orthogonal which is reported in the main theorem of this article. We state that, even if the design is not orthogonal, even if residuals are correlated, up to a transformation, the LASSO and SLOPE estimators have a simple expression based on the Best Linear Unbiased Estimator (BLUE). Comparisons with the LASSO estimator show the benefits of the soft-thresholded BLUE.
+DA  - 2020/02/04/
+PY  - 2020
+DO  - 10.1080/02331888.2020.1720019
+VL  - 54
+IS  - 2
+SP  - 340
+EP  - 352
+SN  - 0233-1888
+UR  - https://doi.org/10.1080/02331888.2020.1720019
+Y2  - 2020/02/12/15:11:42
+L1  - https://www.tandfonline.com/doi/pdf/10.1080/02331888.2020.1720019
+L2  - https://www.tandfonline.com/doi/full/10.1080/02331888.2020.1720019
+KW  - SLOPE
+KW  - Best linear unbiased estimator
+KW  - LASSO
+ER  - 
+
+TY  - CONF
+TI  - Algorithmic analysis and statistical estimation of SLOPE via approximate message passing
+AU  - Bu, Zhiqi
+AU  - Klusowski, Jason
+AU  - Rush, Cynthia
+AU  - Su, Weijie
+T2  - Neural Information Processing Systems 2019
+A2  - Wallach, H.
+A2  - Larochelle, H.
+A2  - Beygelzimer, A.
+A2  - dAlché-Buc, F.
+A2  - Fox, E.
+A2  - Garnett, R.
+C1  - Vancouver, Canada
+C3  - Advances in neural information processing systems 32
+DA  - 2019/12/08/14
+PY  - 2019
+SP  - 9361
+EP  - 9371
+PB  - Curran Associates, Inc.
+UR  - https://papers.nips.cc/paper/9134-algorithmic-analysis-and-statistical-estimation-of-slope-via-approximate-message-passing
+L1  - https://papers.nips.cc/paper/9134-algorithmic-analysis-and-statistical-estimation-of-slope-via-approximate-message-passing.pdf
+ER  - 
+
+TY  - CONF
+TI  - Fast lasso screening tests based on correlations
+AU  - Xiang, Zhen James
+AU  - Ramadge, Peter J.
+T2  - 2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+AB  - Representing a vector as a sparse linear combination of codewords, e.g. by solving a lasso problem, lies at the heart of many machine learning and statistics applications. To improve the efficiency of solving lasso problems, we systematically investigate lasso screening, a process that quickly identifies dictionary entries that won't be used in the optimal sparse representation, and hence can be removed from the problem. We propose a general test called an R region test that unifies existing screening tests and we derive a particular instance called the dome test. This test is stronger than existing screening tests and can be executed in linear-time as a two-pass test with a memory footprint of only three codewords.
+C3  - 2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+DA  - 2012/03//
+PY  - 2012
+DO  - 10.1109/ICASSP.2012.6288334
+DP  - IEEE Xplore
+SP  - 2137
+EP  - 2140
+L1  - https://ieeexplore.ieee.org/ielx5/6268628/6287775/06288334.pdf?tp=&arnumber=6288334&isnumber=6287775&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzYyODgzMzQ=
+L2  - https://ieeexplore.ieee.org/document/6288334
+KW  - Algorithms
+KW  - Optimization
+KW  - Correlation
+KW  - Dictionaries
+KW  - optimisation
+KW  - correlation methods
+KW  - correlations
+KW  - dictionary entry identification
+KW  - dome test
+KW  - Educational institutions
+KW  - face recognition
+KW  - fast lasso screening tests
+KW  - lasso problems
+KW  - learning (artificial intelligence)
+KW  - machine learning
+KW  - Machine learning
+KW  - sparse linear codeword combination
+KW  - Standards
+KW  - statistical testing
+KW  - statistics applications
+KW  - two-pass test
+KW  - Vectors
+ER  - 
+
+TY  - JOUR
+TI  - Pathwise coordinate optimization
+AU  - Friedman, Jerome
+AU  - Hastie, Trevor
+AU  - Höfling, Holger
+AU  - Tibshirani, Robert
+T2  - The Annals of Applied Statistics
+AB  - We consider “one-at-a-time” coordinate-wise descent algorithms for a class of convex optimization problems. An algorithm of this kind has been proposed for the L1-penalized regression (lasso) in the literature, but it seems to have been largely ignored. Indeed, it seems that coordinate-wise algorithms are not often used in convex optimization. We show that this algorithm is very competitive with the well-known LARS (or homotopy) procedure in large lasso problems, and that it can be applied to related methods such as the garotte and elastic net. It turns out that coordinate-wise descent does not work in the “fused lasso,” however, so we derive a generalized algorithm that yields the solution in much less time that a standard convex optimizer. Finally, we generalize the procedure to the two-dimensional fused lasso, and demonstrate its performance on some image smoothing problems.
+DA  - 2007/12//
+PY  - 2007
+DO  - 10/d88g8c
+DP  - Project Euclid
+VL  - 1
+IS  - 2
+SP  - 302
+EP  - 332
+J2  - Ann. Appl. Stat.
+LA  - EN
+SN  - 1932-6157
+UR  - https://projecteuclid.org/euclid.aoas/1196438020
+Y2  - 2018/03/12/09:08:26
+L2  - https://projecteuclid.org/euclid.aoas/1196438020
+KW  - lasso
+KW  - Coordinate descent
+KW  - convex optimization
+ER  - 
+
+TY  - JOUR
+TI  - Least angle regression
+AU  - Efron, Bradley
+AU  - Hastie, Trevor
+AU  - Johnstone, Iain
+AU  - Tibshirani, Robert
+T2  - Annals of Statistics
+AB  - The purpose of model selection algorithms such as All Subsets, Forward Selection and Backward Elimination is to choose a linear model on the basis of the same set of data to which the model will be applied. Typically we have available a large collection of possible covariates from which we hope to select a parsimonious set for the efficient prediction of a response variable. Least Angle Regression (LARS), a new model selection algorithm, is a useful and less greedy version of traditional forward selection methods. Three main properties are derived: (1) A simple modification of the LARS algorithm implements the Lasso, an attractive version of ordinary least squares that constrains the sum of the absolute regression coefficients; the LARS modification calculates all possible Lasso estimates for a given problem, using an order of magnitude less computer time than previous methods. (2) A different LARS modification efficiently implements Forward Stagewise linear regression, another promising new model selection method; this connection explains the similar numerical results previously observed for the Lasso and Stagewise, and helps us understand the properties of both methods, which are seen as constrained versions of the simpler LARS algorithm. (3) A simple approximation for the degrees of freedom of a LARS estimate is available, from which we derive a Cp estimate of prediction error; this allows a principled choice among the range of possible LARS estimates. LARS and its variants are computationally efficient: the paper describes a publicly available algorithm that requires only the same order of magnitude of computational effort as ordinary least squares applied to the full set of covariates.
+DA  - 2004/04//
+PY  - 2004
+DO  - 10.1214/009053604000000067
+DP  - Project Euclid
+VL  - 32
+IS  - 2
+SP  - 407
+EP  - 499
+J2  - Ann. Statist.
+LA  - en
+SN  - 0090-5364
+UR  - https://projecteuclid.org/euclid.aos/1083178935
+Y2  - 2020/08/20/15:40:14
+L1  - https://projecteuclid.org/download/pdfview_1/euclid.aos/1083178935
+L2  - https://projecteuclid.org/euclid.aos/1083178935
+KW  - Lasso
+KW  - boosting
+KW  - coefficient paths
+KW  - linear regression
+KW  - variable selection
+ER  - 
+
+TY  - ELEC
+TI  - Replication data for: "Fast and scalable Lasso via stochastic Frank-Wolfe methods with a convergence guarantee"
+AU  - Frandi, Emanuele
+T2  - Harvard Dataverse
+AB  - Datasets used for the experiments in Section 5 of the paper "Fast and Scalable Lasso via Stochastic Frank-Wolfe Methods with a Convergence Guarante...
+DA  - 2015/10/23/
+PY  - 2015
+LA  - en
+ST  - Replication Data for
+UR  - https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QJEUKR
+Y2  - 2020/10/09/09:53:05
+ER  - 
+
+TY  - CONF
+TI  - NewsWeeder: learning to filter netnews
+AU  - Lang, Ken
+T2  - ICML 1995
+A2  - Prieditis, Armand
+A2  - Russell, Stuart
+AB  - A significant problem in many information filtering systems is the dependence on the user for the creation and maintenance of a user profile, which describes the user's interests. NewsWeeder is a netnews-filtering system that addresses this problem by letting the user rate his or her interest level for each article being read (1-5), and then learning a user profile based on these ratings. This paper describes how NewsWeeder accomplishes this task, and examines the alternative learning methods used. The results show that a learning algorithm based on the Minimum Description Length (MDL) principle was able to raise the percentage of interesting articles to be shown to users from 14% to 52% on average. Further, this performance significantly outperformed (by 21%) one of the most successful techniques in Information Retrieval (IR), term-frequency/inverse-document-frequency (tf-idf) weighting.
+C1  - Tahoe City, CA, USA
+C3  - Proceedings of the Twelfth International Conference on International Conference on Machine Learning
+DA  - 1995/07/09/12
+PY  - 1995
+DP  - ScienceDirect
+SP  - 331
+EP  - 339
+LA  - en
+PB  - Morgan Kaufmann
+SN  - 978-1-55860-377-6
+ST  - NewsWeeder
+UR  - http://www.sciencedirect.com/science/article/pii/B9781558603776500487
+Y2  - 2020/10/09/10:02:51
+L2  - https://www.sciencedirect.com/science/article/pii/B9781558603776500487
+ER  - 
+
+TY  - JOUR
+TI  - Regularization and variable selection via the Elastic Net
+AU  - Zou, Hui
+AU  - Hastie, Trevor
+T2  - Journal of the Royal Statistical Society. Series B (Statistical Methodology)
+AB  - We propose the elastic net, a new regularization and variable selection method. Real world data and a simulation study show that the elastic net often outperforms the lasso, while enjoying a similar sparsity of representation. In addition, the elastic net encourages a grouping effect, where strongly correlated predictors tend to be in or out of the model together. The elastic net is particularly useful when the number of predictors (p) is much bigger than the number of observations (n). By contrast, the lasso is not a very satisfactory variable selection method in the p ≫ n case. An algorithm called LARS-EN is proposed for computing elastic net regularization paths efficiently, much like algorithm LARS does for the lasso.
+DA  - 2005///
+PY  - 2005
+DP  - JSTOR
+VL  - 67
+IS  - 2
+SP  - 301
+EP  - 320
+SN  - 1369-7412
+UR  - www.jstor.org/stable/3647580
+Y2  - 2018/03/12/08:58:06
+ER  - 
+
+TY  - JOUR
+TI  - The strong screening rule for SLOPE
+AU  - Larsson, Johan
+AU  - Bogdan, Małgorzata
+AU  - Wallin, Jonas
+T2  - arXiv:2005.03730 [cs, stat]
+AB  - Extracting relevant features from data sets where the number of observations ($n$) is much smaller then the number of predictors ($p$) is a major challenge in modern statistics. Sorted L-One Penalized Estimation (SLOPE), a generalization of the lasso, is a promising method within this setting. Current numerical procedures for SLOPE, however, lack the efficiency that respective tools for the lasso enjoy, particularly in the context of estimating a complete regularization path. A key component in the efficiency of the lasso is predictor screening rules: rules that allow predictors to be discarded before estimating the model. This is the first paper to establish such a rule for SLOPE. We develop a screening rule for SLOPE by examining its subdifferential and show that this rule is a generalization of the strong rule for the lasso. Our rule is heuristic, which means that it may discard predictors erroneously. We present conditions under which this may happen and show that such situations are rare and easily safeguarded against by a simple check of the optimality conditions. Our numerical experiments show that the rule performs well in practice, leading to improvements by orders of magnitude for data in the $p \gg n$ domain, as well as incurring no additional computational overhead when $n \gg p$. We also examine the effect of correlation structures in the design matrix on the rule and discuss algorithmic strategies for employing the rule. Finally, we provide an efficient implementation of the rule in our R package SLOPE.
+DA  - 2020/05/07/
+PY  - 2020
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/2005.03730
+Y2  - 2020/05/17/19:00:01
+L1  - https://arxiv.org/pdf/2005.03730.pdf
+L2  - https://arxiv.org/abs/2005.03730
+N1  - <p>Comment: 25 pages, 7 figures</p>
+KW  - Computer Science - Machine Learning
+KW  - Statistics - Machine Learning
+KW  - Statistics - Computation
+ER  - 
+
+TY  - CONF
+TI  - A dynamic screening principle for the lasso
+AU  - Bonnefoy, Antoine
+AU  - Emiya, Valentin
+AU  - Ralaivola, Liva
+AU  - Gribonval, Rémi
+T2  - EUSIPCO 2014
+AB  - The Lasso is an optimization problem devoted to finding a sparse representation of some signal with respect to a predefined dictionary. An original and computationally-efficient method is proposed here to solve this problem, based on a dynamic screening principle. It makes it possible to accelerate a large class of optimization algorithms by iteratively reducing the size of the dictionary during the optimization process, discarding elements that are provably known not to belong to the solution of the Lasso. The iterative reduction of the dictionary is what we call dynamic screening. As this screening step is inexpensive, the computational cost of the algorithm using our dynamic screening strategy is lower than that of the base algorithm. Numerical experiments on synthetic and real data support the relevance of this approach.
+C1  - Lisbon, Portugal
+C3  - EUSIPCO 2014
+DA  - 2014/09/01/5
+PY  - 2014
+DP  - HAL Archives Ouvertes
+SP  - 6
+EP  - 10
+PB  - IEEE
+SN  - 978-0-9928626-1-9
+UR  - https://hal.archives-ouvertes.fr/hal-00880787v4
+Y2  - 2020/10/07/17:17:16
+L1  - https://hal.archives-ouvertes.fr/hal-00880787/document
+KW  - Lasso
+KW  - Dynamic screening
+KW  - First-order algorithms
+KW  - ISTA
+KW  - ISTA.
+KW  - Screening test
+ER  - 
+
+TY  - CONF
+TI  - The atomic norm formulation of OSCAR regularization with application to the Frank–Wolfe algorithm
+AU  - Zeng, Xiangrong
+AU  - Figueiredo, Mário A. T.
+T2  - EUSIPCO 2014
+AB  - This paper proposes atomic norm formulation of octagonal shrinkage and clustering algorithm for regression (OSCAR) regularization. The OSCAR regularizer can be reformulated using a decreasing weighted sorted l1 (DWSL1) norm (which is shown to be convex). We also show how, by exploiting an atomic norm formulation, the Ivanov regularization scheme involving the OSCAR regularizer can be handled using the Frank-Wolfe (also known as conditional gradient) method.
+C1  - Lisbon, Portugal
+C3  - EUSIPCO 2014
+DA  - 2014/09/01/5
+PY  - 2014
+DP  - IEEE Xplore
+SP  - 780
+EP  - 784
+PB  - IEEE
+SN  - 978-0-9928626-1-9
+UR  - https://ieeexplore.ieee.org/document/6952255
+L1  - https://ieeexplore.ieee.org/ielx7/6937054/6951911/06952255.pdf?tp=&arnumber=6952255&isnumber=6951911&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzY5NTIyNTU=
+L2  - https://ieeexplore.ieee.org/document/6952255
+KW  - Signal processing algorithms
+KW  - Vectors
+KW  - Algorithm design and analysis
+KW  - atomic norm
+KW  - atomic norm formulation
+KW  - Bismuth
+KW  - Clustering algorithms
+KW  - compressed sensing
+KW  - conditional gradient method
+KW  - Convex functions
+KW  - decreasing weighted sorted ℓ1 norm
+KW  - DWSL1 norm
+KW  - Frank-Wolfe algorithm
+KW  - Frank-Wolfe method
+KW  - gradient methods
+KW  - Gradient methods
+KW  - Group sparsity
+KW  - Ivanov regularization
+KW  - Ivanov regularization scheme
+KW  - octagonal shrinkage and clustering algorithm for regression
+KW  - OSCAR regularization
+KW  - pattern clustering
+KW  - regression analysis
+ER  - 
+
+TY  - CONF
+TI  - Handwritten digit recognition with a back-propagation network
+AU  - LeCun, Yann
+AU  - Boser, Bernhard E.
+AU  - Denker, John S.
+AU  - Henderson, Donnie
+AU  - Howard, R. E.
+AU  - Hubbard, Wayne E.
+AU  - Jackel, Lawrence D.
+T2  - Neural Information Processing Systems 1989
+A2  - Touretzky, D. S.
+C1  - Denver, CO, USA
+C3  - Advances in neural information processing systems 2
+DA  - 1989/11/27/30
+PY  - 1989
+SP  - 396
+EP  - 404
+PB  - Morgan-Kaufmann
+SN  - 978-1-55860-100-0
+UR  - https://papers.nips.cc/paper/293-handwritten-digit-recognition-with-a-back-propagation-network
+ER  - 
+
+TY  - CONF
+TI  - Unified methods for exploiting piecewise linear structure in convex optimization
+AU  - Johnson, Tyler B
+AU  - Guestrin, Carlos
+T2  - Neural Information Processing Systems 2016
+A2  - Lee, D. D.
+A2  - Sugiyama, M.
+A2  - Luxburg, U. V.
+A2  - Guyon, I.
+A2  - Garnett, R.
+C1  - Barcelona, Spain
+C3  - Advances in neural information processing systems 29
+DA  - 2016/12/05/10
+PY  - 2016
+SP  - 4754
+EP  - 4762
+PB  - Curran Associates, Inc.
+UR  - https://papers.nips.cc/paper/6043-unified-methods-for-exploiting-piecewise-linear-structure-in-convex-optimization
+ER  - 
+
+TY  - CONF
+TI  - Learning sparse representations of high dimensional data on large scale dictionaries
+AU  - Xiang, Zhen J.
+AU  - Xu, Hao
+AU  - Ramadge, Peter J
+T2  - Neural Information Processing Systems 2011
+A2  - Shawe-Taylor, J.
+A2  - Zemel, R. S.
+A2  - Bartlett, P. L.
+A2  - Pereira, F.
+A2  - Weinberger, K. Q.
+C3  - Advances in neural information processing systems 24
+DA  - 2011/12/12/17
+PY  - 2011
+SP  - 900
+EP  - 908
+PB  - Curran Associates, Inc.
+UR  - https://papers.nips.cc/paper/4400-learning-sparse-representations-of-high-dimensional-data-on-large-scale-dictionaries
+ER  - 
+
+TY  - JOUR
+TI  - Regression models for count data in R
+AU  - Zeileis, Achim
+AU  - Kleiber, Christian
+AU  - Jackman, Simon
+T2  - Journal of Statistical Software
+DA  - 2008/07/29/
+PY  - 2008
+DO  - 10.18637/jss.v027.i08
+DP  - www.jstatsoft.org
+VL  - 27
+IS  - 1
+SP  - 1
+EP  - 25
+LA  - en
+SN  - 1548-7660
+UR  - https://www.jstatsoft.org/index.php/jss/article/view/v027i08
+Y2  - 2020/04/06/08:55:08
+L1  - https://www.jstatsoft.org/index.php/jss/article/view/v027i08/v27i08.pdf
+L2  - https://www.jstatsoft.org/article/view/v027i08
+ER  - 
+
+TY  - JOUR
+TI  - On the non-negative Garrotte estimator
+AU  - Yuan, Ming
+AU  - Lin, Yi
+T2  - Journal of the Royal Statistical Society. Series B (Statistical Methodology)
+AB  - We study the non-negative garrotte estimator from three different aspects: consistency, computation and flexibility. We argue that the non-negative garrotte is a general procedure that can be used in combination with estimators other than the original least squares estimator as in its original form. In particular, we consider using the lasso, the elastic net and ridge regression along with ordinary least squares as the initial estimate in the non-negative garrotte. We prove that the non-negative garrotte has the nice property that, with probability tending to 1, the solution path contains an estimate that correctly identifies the set of important variables and is consistent for the coefficients of the important variables, whereas such a property may not be valid for the initial estimators. In general, we show that the non-negative garrotte can turn a consistent estimate into an estimate that is not only consistent in terms of estimation but also in terms of variable selection. We also show that the non-negative garrotte has a piecewise linear solution path. Using this fact, we propose an efficient algorithm for computing the whole solution path for the non-negative garrotte. Simulations and a real example demonstrate that the non-negative garrotte is very effective in improving on the initial estimator in terms of variable selection and estimation accuracy.
+DA  - 2007///
+PY  - 2007
+DP  - JSTOR
+VL  - 69
+IS  - 2
+SP  - 143
+EP  - 161
+SN  - 1369-7412
+UR  - https://www.jstor.org/stable/4623260
+DB  - JSTOR
+Y2  - 2020/04/16/09:27:05
+L1  - https://www.jstor.org/stable/pdfplus/10.2307/4623260.pdf?acceptTC=true
+ER  - 
+
+TY  - ELEC
+TI  - Delve datasets
+AU  - The University of Toronto
+T2  - The University of Toronto
+DA  - 1997/05/27/
+PY  - 1997
+UR  - http://www.cs.toronto.edu/~delve/data/datasets.html
+Y2  - 2020/04/06/08:50:49
+ER  - 
+
+TY  - JOUR
+TI  - Adaptive Bayesian SLOPE – high-dimensional model selection with missing values
+AU  - Jiang, Wei
+AU  - Bogdan, Malgorzata
+AU  - Josse, Julie
+AU  - Miasojedow, Blazej
+AU  - Rockova, Veronika
+AU  - Group, TraumaBase
+T2  - arXiv:1909.06631 [stat]
+AB  - We consider the problem of variable selection in high-dimensional settings with missing observations among the covariates. To address this relatively understudied problem, we propose a new synergistic procedure -- adaptive Bayesian SLOPE -- which effectively combines the SLOPE method (sorted $l_1$ regularization) together with the Spike-and-Slab LASSO method. We position our approach within a Bayesian framework which allows for simultaneous variable selection and parameter estimation, despite the missing values. As with the Spike-and-Slab LASSO, the coefficients are regarded as arising from a hierarchical model consisting of two groups: (1) the spike for the inactive and (2) the slab for the active. However, instead of assigning independent spike priors for each covariate, here we deploy a joint "SLOPE" spike prior which takes into account the ordering of coefficient magnitudes in order to control for false discoveries. Through extensive simulations, we demonstrate satisfactory performance in terms of power, FDR and estimation bias under a wide range of scenarios. Finally, we analyze a real dataset consisting of patients from Paris hospitals who underwent a severe trauma, where we show excellent performance in predicting platelet levels. Our methodology has been implemented in C++ and wrapped into an R package ABSLOPE for public use.
+DA  - 2019/11/06/
+PY  - 2019
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1909.06631
+Y2  - 2020/05/06/07:13:08
+L1  - https://arxiv.org/pdf/1909.06631.pdf
+L2  - https://arxiv.org/abs/1909.06631
+N1  - Comment: R package https://github.com/wjiang94/ABSLOPE
+KW  - Statistics - Computation
+KW  - Statistics - Methodology
+KW  - Statistics - Applications
+ER  - 
+
+TY  - BOOK
+TI  - The elements of statistical learning: data mining, inference, and prediction, second edition
+AU  - Hastie, Trevor
+AU  - Tibshirani, Robert
+AU  - Friedman, Jerome
+T2  - Springer Series in Statistics
+AB  - During the past decade there has been an explosion in computation and information technology. With it have come vast amounts of data in a variety of fields such as medicine, biology, finance, and marketing. The challenge of understanding these data has led to the development of new tools in the field of statistics, and spawned new areas such as data mining, machine learning, and bioinformatics. Many of these tools have common underpinnings but are often expressed with different terminology. This book describes the important ideas in these areas in a common conceptual framework. While the approach is statistical, the emphasis is on concepts rather than mathematics. Many examples are given, with a liberal use of color graphics. It is a valuable resource for statisticians and anyone interested in data mining in science or industry. The book's coverage is broad, from supervised learning (prediction) to unsupervised learning. The many topics include neural networks, support vector machines, classification trees and boosting---the first comprehensive treatment of this topic in any book. This major new edition features many topics not covered in the original, including graphical models, random forests, ensemble methods, least angle regression and path algorithms for the lasso, non-negative matrix factorization, and spectral clustering. There is also a chapter on methods for ``wide'' data (p bigger than n), including multiple testing and false discovery rates. Trevor Hastie, Robert Tibshirani, and Jerome Friedman are professors of statistics at Stanford University. They are prominent researchers in this area: Hastie and Tibshirani developed generalized additive models and wrote a popular book of that title. Hastie co-developed much of the statistical modeling software and environment in R/S-PLUS and invented principal curves and surfaces. Tibshirani proposed the lasso and is co-author of the very successful An Introduction to the Bootstrap. Friedman is the co-inventor of many data-mining tools including CART, MARS, projection pursuit and gradient boosting.
+CY  - New York
+DA  - 2009///
+PY  - 2009
+DP  - www.springer.com
+ET  - 2
+LA  - en
+PB  - Springer-Verlag
+SN  - 978-0-387-84857-0
+ST  - The Elements of Statistical Learning
+UR  - //www.springer.com/la/book/9780387848570
+Y2  - 2018/03/12/08:50:14
+L2  - http://www.springer.com/la/book/9780387848570
+ER  - 
+
+TY  - JOUR
+TI  - Molecular classification of cancer: class discovery and class prediction by gene expression monitoring
+AU  - Golub, T. R.
+AU  - Slonim, D. K.
+AU  - Tamayo, P.
+AU  - Huard, C.
+AU  - Gaasenbeek, M.
+AU  - Mesirov, J. P.
+AU  - Coller, H.
+AU  - Loh, M. L.
+AU  - Downing, J. R.
+AU  - Caligiuri, M. A.
+AU  - Bloomfield, C. D.
+AU  - Lander, E. S.
+T2  - Science
+AB  - Although cancer classification has improved over the past 30 years, there has been no general approach for identifying new cancer classes (class discovery) or for assigning tumors to known classes (class prediction). Here, a generic approach to cancer classification based on gene expression monitoring by DNA microarrays is described and applied to human acute leukemias as a test case. A class discovery procedure automatically discovered the distinction between acute myeloid leukemia (AML) and acute lymphoblastic leukemia (ALL) without previous knowledge of these classes. An automatically derived class predictor was able to determine the class of new leukemia cases. The results demonstrate the feasibility of cancer classification based solely on gene expression monitoring and suggest a general strategy for discovering and predicting cancer classes for other types of cancer, independent of previous biological knowledge.
+DA  - 1999/10/15/
+PY  - 1999
+DO  - 10.1126/science.286.5439.531
+DP  - PubMed
+VL  - 286
+IS  - 5439
+SP  - 531
+EP  - 537
+J2  - Science
+LA  - eng
+SN  - 0036-8075
+ST  - Molecular classification of cancer
+L2  - http://www.ncbi.nlm.nih.gov/pubmed/10521349
+KW  - Humans
+KW  - Treatment Outcome
+KW  - Reproducibility of Results
+KW  - Predictive Value of Tests
+KW  - Gene Expression Profiling
+KW  - Oligonucleotide Array Sequence Analysis
+KW  - Acute Disease
+KW  - Antineoplastic Combined Chemotherapy Protocols
+KW  - Cell Adhesion
+KW  - Cell Cycle
+KW  - Homeodomain Proteins
+KW  - Leukemia, Myeloid
+KW  - Neoplasm Proteins
+KW  - Neoplasms
+KW  - Oncogenes
+KW  - Precursor Cell Lymphoblastic Leukemia-Lymphoma
+ER  - 
+
+TY  - JOUR
+TI  - Supplement to ”SLOPE – adaptive variable selection via convex optimization”
+AU  - Bogdan, Małgorzata
+AU  - Berg, Ewout van den
+AU  - Sabatti, Chiara
+AU  - Su, Weijie
+AU  - Candès, Emmanuel J.
+T2  - Annals of Applied Statistics
+DA  - 2015///
+PY  - 2015
+DO  - 10.1214/15-AOAS842SUPP
+DP  - Zotero
+VL  - 9
+IS  - 3
+SP  - 1
+EP  - 7
+LA  - en
+SN  - 1932-6157
+UR  - https://projecteuclid.org/euclid.aoas/1446488733#supplemental
+ER  - 
+
+TY  - JOUR
+TI  - A fast iterative shrinkage-thresholding algorithm for linear inverse problems
+AU  - Beck, A.
+AU  - Teboulle, M.
+T2  - SIAM Journal on Imaging Sciences
+AB  - We consider the class of iterative shrinkage-thresholding algorithms (ISTA) for solving linear inverse problems arising in signal/image processing. This class of methods, which can be viewed as an extension of the classical gradient algorithm, is attractive due to its simplicity and thus is adequate for solving large-scale problems even with dense matrix data. However, such methods are also known to converge quite slowly. In this paper we present a new fast iterative shrinkage-thresholding algorithm (FISTA) which preserves the computational simplicity of ISTA but with a global rate of convergence which is proven to be significantly better, both theoretically and practically. Initial promising numerical results for wavelet-based image deblurring demonstrate the capabilities of FISTA which is shown to be faster than ISTA by several orders of magnitude.
+DA  - 2009/01/01/
+PY  - 2009
+DO  - 10.1137/080716542
+DP  - epubs.siam.org (Atypon)
+VL  - 2
+IS  - 1
+SP  - 183
+EP  - 202
+J2  - SIAM J. Imaging Sci.
+UR  - https://epubs.siam.org/doi/abs/10.1137/080716542
+Y2  - 2019/02/10/18:05:58
+L1  - http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=C811C7943CB846BC5C54D9C508749401?doi=10.1.1.231.3271&rep=rep1&type=pdf
+L2  - https://epubs.siam.org/doi/abs/10.1137/080716542?journalCode=sjisbi
+KW  - convex-optimization
+KW  - fista
+ER  - 
+
+TY  - BOOK
+TI  - Inequalities
+AU  - Hardy, G.H.
+AU  - Littlewood, J.E.
+AU  - Pólya, G.
+CY  - Cambridge, United Kingdom
+DA  - 1952///
+PY  - 1952
+ET  - 2
+SP  - 324
+LA  - english
+PB  - Cambridge University Press
+SN  - 0-521-05206-8
+ER  - 
+
+TY  - JOUR
+TI  - Demand for medical care by the elderly: a finite mixture approach
+AU  - Deb, Partha
+AU  - Trivedi, Pravin K.
+T2  - Journal of Applied Econometrics
+AB  - In this article we develop a finite mixture negative binomial count model that accommodates unobserved heterogeneity in an intuitive and analytically tractable manner. This model, the standard negative binomial model, and its hurdle extension are estimated for six measures of medical care demand by the elderly using a sample from the 1987 National Medical Expenditure Survey. The finite mixture model is preferred overall by statistical model selection criteria. Two points of support adequately describe the distribution of the unobserved heterogeneity, suggesting two latent populations, the `healthy' and the `ill' whose fitted distributions differ substantially from each other.
+DA  - 1997///
+PY  - 1997
+DP  - JSTOR
+VL  - 12
+IS  - 3
+SP  - 313
+EP  - 336
+SN  - 0883-7252
+ST  - Demand for Medical Care by the Elderly
+UR  - https://www.jstor.org/stable/2285252
+DB  - JSTOR
+Y2  - 2020/04/06/08:55:52
+L1  - https://www.jstor.org/stable/pdfplus/10.2307/2285252.pdf?acceptTC=true
+ER  - 
+
+TY  - JOUR
+TI  - Statistical estimation and testing via the sorted L1 norm
+AU  - Bogdan, Małgorzata
+AU  - Berg, Ewout van den
+AU  - Su, Weijie
+AU  - Candès, Emmanuel
+T2  - arXiv:1310.1969 [math, stat]
+AB  - We introduce a novel method for sparse regression and variable selection, which is inspired by modern ideas in multiple testing. Imagine we have observations from the linear model y = X beta + z, then we suggest estimating the regression coefficients by means of a new estimator called SLOPE, which is the solution to minimize 0.5 ||y - Xb\|_2^2 + lambda_1 |b|_(1) + lambda_2 |b|_(2) + ... + lambda_p |b|_(p); here, lambda_1 >= \lambda_2 >= ... >= \lambda_p >= 0 and |b|_(1) >= |b|_(2) >= ... >= |b|_(p) is the order statistic of the magnitudes of b. The regularizer is a sorted L1 norm which penalizes the regression coefficients according to their rank: the higher the rank, the larger the penalty. This is similar to the famous BHq procedure [Benjamini and Hochberg, 1995], which compares the value of a test statistic taken from a family to a critical threshold that depends on its rank in the family. SLOPE is a convex program and we demonstrate an efficient algorithm for computing the solution. We prove that for orthogonal designs with p variables, taking lambda_i = F^{-1}(1-q_i) (F is the cdf of the errors), q_i = iq/(2p), controls the false discovery rate (FDR) for variable selection. When the design matrix is nonorthogonal there are inherent limitations on the FDR level and the power which can be obtained with model selection methods based on L1-like penalties. However, whenever the columns of the design matrix are not strongly correlated, we demonstrate empirically that it is possible to select the parameters lambda_i as to obtain FDR control at a reasonable level as long as the number of nonzero coefficients is not too large. At the same time, the procedure exhibits increased power over the lasso, which treats all coefficients equally. The paper illustrates further estimation properties of the new selection rule through comprehensive simulation studies.
+DA  - 2013/10/29/
+PY  - 2013
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1310.1969
+Y2  - 2020/04/16/11:20:26
+L1  - https://arxiv.org/pdf/1310.1969.pdf
+L2  - https://arxiv.org/abs/1310.1969
+KW  - Mathematics - Statistics Theory
+KW  - Statistics - Methodology
+ER  - 
+
+TY  - JOUR
+TI  - SLOPE – adaptive variable selection via convex optimization
+AU  - Bogdan, Małgorzata
+AU  - Berg, Ewout van den
+AU  - Chiara Sabatti
+AU  - Weijie Su
+AU  - Emmanuel J. Candès
+T2  - The annals of applied statistics
+DA  - 2015///
+PY  - 2015
+DO  - 10.1214/15-AOAS842
+DP  - PubMed Central
+VL  - 9
+IS  - 3
+SP  - 1103
+EP  - 1140
+J2  - Ann Appl Stat
+SN  - 1932-6157
+UR  - https://projecteuclid.org/euclid.aoas/1446488733
+Y2  - 2018/12/17/14:56:26
+KW  - _tablet
+KW  - convex-optimization
+KW  - l1-regularization
+KW  - slope
+ER  - 
+
+TY  - JOUR
+TI  - Group SLOPE – adaptive selection of groups of predictors
+AU  - Brzyski, Damian
+AU  - Gossmann, Alexej
+AU  - Su, Weijie
+AU  - Bogdan, Małgorzata
+T2  - Journal of the American Statistical Association
+AB  - Sorted L-One Penalized Estimation (SLOPE; Bogdan et al. 2013 Bogdan, M., van den Berg, E., Su, W., and Candès, E. J. (2013), “Statistical Estimation and Testing via the Ordered ℓ1 Norm,” Technical Report 2013-07, Department of Statistics. Standford, CA: Stanford University. [Google Scholar], 2015 Bogdan, M., van den Berg, E., Sabatti, C., Su, W., and Candès, E. J. (2015), “SLOPE—Adaptive Variable Selection via Convex Optimization,” Annals of Applied Statistics, 9, 1103–1140.[Crossref], [PubMed], [Web of Science ®], , [Google Scholar]) is a relatively new convex optimization procedure, which allows for adaptive selection of regressors under sparse high-dimensional designs. Here, we extend the idea of SLOPE to deal with the situation when one aims at selecting whole groups of explanatory variables instead of single regressors. Such groups can be formed by clustering strongly correlated predictors or groups of dummy variables corresponding to different levels of the same qualitative predictor. We formulate the respective convex optimization problem, group SLOPE (gSLOPE), and propose an efficient algorithm for its solution. We also define a notion of the group false discovery rate (gFDR) and provide a choice of the sequence of tuning parameters for gSLOPE so that gFDR is provably controlled at a prespecified level if the groups of variables are orthogonal to each other. Moreover, we prove that the resulting procedure adapts to unknown sparsity and is asymptotically minimax with respect to the estimation of the proportions of variance of the response variable explained by regressors from different groups. We also provide a method for the choice of the regularizing sequence when variables in different groups are not orthogonal but statistically independent and illustrate its good properties with computer simulations. Finally, we illustrate the advantages of gSLOPE in the context of Genome Wide Association Studies. R package grpSLOPE with an implementation of our method is available on The Comprehensive R Archive Network.
+DA  - 2018/01/15/
+PY  - 2018
+DO  - 10/gfrd93
+DP  - amstat.tandfonline.com (Atypon)
+SP  - 1
+EP  - 15
+J2  - Journal of the American Statistical Association
+SN  - 0162-1459
+UR  - https://amstat.tandfonline.com/doi/full/10.1080/01621459.2017.1411269
+Y2  - 2018/12/17/15:19:05
+L2  - https://amstat.tandfonline.com/doi/full/10.1080/01621459.2017.1411269
+KW  - _tablet
+ER  - 
+
+TY  - JOUR
+TI  - Gap safe screening rules for sparsity enforcing penalties
+AU  - Ndiaye, Eugene
+AU  - Fercoq, Olivier
+AU  - Gramfort, Alexandre
+AU  - Salmon, Joseph
+T2  - Journal of Machine Learning Research
+DA  - 2017///
+PY  - 2017
+VL  - 18
+IS  - 128
+SP  - 1
+EP  - 33
+UR  - http://jmlr.org/papers/v18/16-577.html
+ER  - 
+
+TY  - JOUR
+TI  - The geometry of uniqueness and model selection of penalized estimators including SLOPE, LASSO, and basis pursuit
+AU  - Schneider, Ulrike
+AU  - Tardivel, Patrick
+T2  - arXiv:2004.09106 [math, stat]
+AB  - We provide a necessary and sufficient condition for the uniqueness of penalized least-squares estimators with a penalty term consisting a norm whose unit ball is given by a polytope. The condition is given by a geometric criterion involving how the row span of the design matrix intersects the faces of the dual norm unit cube. This criterion also provides information about the model selection properties of the corresponding estimation method. Our analyses cover LASSO, the related method of basis pursuit, as well as the SLOPE estimator.
+DA  - 2020/04/20/
+PY  - 2020
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/2004.09106
+Y2  - 2020/05/19/11:54:17
+L1  - https://arxiv.org/pdf/2004.09106.pdf
+L2  - https://arxiv.org/abs/2004.09106
+KW  - Mathematics - Statistics Theory
+ER  - 
+
+TY  - CONF
+TI  - Fast OSCAR and OWL regression via safe screening rules
+AU  - Bao, Runxue
+AU  - Gu, Bin
+AU  - Huang, Heng
+T2  - ICML 2020
+AB  - Ordered Weighted L1 (OWL) regularized regression is a new regression analysis for highdimensional sparse learning. Proximal gradient methods are used as standard approaches to solve OWL regression. However, it is still a burning issue to solve OWL regression due to considerable computational cost and memory usage when the feature or sample size is large. In this paper, we propose the ﬁrst safe screening rule for OWL regression by exploring the order of the primal solution with the unknown order structure via an iterative strategy, which overcomes the difﬁculties of tackling the non-separable regularizer. It effectively avoids the updates of the parameters whose coefﬁcients must be zero during the learning process. More importantly, the proposed screening rule can be easily applied to standard and stochastic proximal gradient methods. Moreover, we prove that the algorithms with our screening rule are guaranteed to have identical results with the original algorithms. Experimental results on a variety of datasets show that our screening rule leads to a signiﬁcant computational gain without any loss of accuracy, compared to existing competitive algorithms.
+C1  - Vienna, Austria
+C3  - Proceedings of the 37th international conference on machine learning
+DA  - 2020/07/12/18
+PY  - 2020
+DP  - Zotero
+VL  - 119
+SP  - 11
+LA  - en
+PB  - PMLR
+UR  - https://proceedings.icml.cc/static/paper_files/icml/2020/738-Paper.pdf
+L1  - https://proceedings.icml.cc/static/paper_files/icml/2020/738-Paper.pdf
+ER  - 
+
+TY  - CONF
+TI  - Mind the duality gap: safer rules for the lasso
+AU  - Fercoq, Olivier
+AU  - Gramfort, Alexandre
+AU  - Salmon, Joseph
+T2  - ICML 2015
+A2  - Bach, Francis
+A2  - Blei, David
+T3  - Proceedings of machine learning research
+AB  - Screening rules allow to early discard irrelevant variables from the optimization in Lasso problems, or its derivatives, making solvers faster. In this paper, we propose new versions of the so-called rules for the Lasso. Based on duality gap considerations, our new rules create safe test regions whose diameters converge to zero, provided that one relies on a converging solver. This property helps screening out more variables, for a wider range of regularization parameter values. In addition to faster convergence, we prove that we correctly identify the active sets (supports) of the solutions in finite time. While our proposed strategy can cope with any solver, its performance is demonstrated using a coordinate descent algorithm particularly adapted to machine learning use cases. Significant computing time reductions are obtained with respect to previous safe rules.
+C1  - Lille, France
+C3  - Proceedings of the 37th international conference on machine learning
+DA  - 2015/07/06/11
+PY  - 2015
+VL  - 37
+SP  - 333
+EP  - 342
+PB  - PMLR
+UR  - http://proceedings.mlr.press/v37/fercoq15
+ER  - 
+
+TY  - CONF
+TI  - Simultaneous safe screening of features and samples in doubly sparse modeling
+AU  - Shibagaki, Atsushi
+AU  - Karasuyama, Masayuki
+AU  - Hatano, Kohei
+AU  - Takeuchi, Ichiro
+T2  - ICML 2016
+A2  - Balcan, Maria Florina
+A2  - Weinberger, Kilian Q.
+T3  - Proceedings of machine learning research
+AB  - The problem of learning a sparse model is conceptually interpreted as the process of identifying active features/samples and then optimizing the model over them. Recently introduced safe screening allows us to identify a part of non-active features/samples. So far, safe screening has been individually studied either for feature screening or for sample screening. In this paper, we introduce a new approach for safely screening features and samples simultaneously by alternatively iterating feature and sample screening steps. A significant advantage of considering them simultaneously rather than individually is that they have a synergy effect in the sense that the results of the previous safe feature screening can be exploited for improving the next safe sample screening performances, and vice-versa. We first theoretically investigate the synergy effect, and then illustrate the practical advantage through intensive numerical experiments for problems with large numbers of features and samples.
+C1  - New York, USA
+C3  - Proceedings of the 33rd international conference on machine learning
+DA  - 2016/06/20/22
+PY  - 2016
+VL  - 48
+SP  - 1577
+EP  - 1586
+PB  - PMLR
+UR  - http://proceedings.mlr.press/v48/shibagaki16
+ER  - 
+
+TY  - CONF
+TI  - Celer: a fast solver for the lasso with dual extrapolation
+AU  - Massias, Mathurin
+AU  - Gramfort, Alexandre
+AU  - Salmon, Joseph
+T2  - ICML 2018
+A2  - Dy, Jennifer
+A2  - Krause, Andreas
+T3  - Proceedings of Machine Learning Research
+AB  - Convex sparsity-inducing regularizations are ubiquitous in high-dimensional machine learning, but solving the resulting optimization problems can be slow. To accelerate solvers, state-of-the-art approaches consist in reducing the size of the optimization problem at hand. In the context of regression, this can be achieved either by discarding irrelevant features (screening techniques) or by prioritizing features likely to be included in the support of the solution (working set techniques). Duality comes into play at several steps in these techniques. Here, we propose an extrapolation technique starting from a sequence of iterates in the dual that leads to the construction of improved dual points. This enables a tighter control of optimality as used in stopping criterion, as well as better screening performance of Gap Safe rules. Finally, we propose a working set strategy based on an aggressive use of Gap Safe screening rules. Thanks to our new dual point construction, we show signiﬁcant computational speedups on multiple real-world problems.
+C1  - Stockholm, Sweden
+C3  - Proceedings of the 35th International Conference on Machine Learning
+DA  - 2018/07/10/15
+PY  - 2018
+DP  - Zotero
+VL  - 80
+SP  - 3315
+EP  - 3324
+LA  - en
+PB  - PMLR
+UR  - http://proceedings.mlr.press/v80/massias18a
+L1  - http://proceedings.mlr.press/v80/massias18a/massias18a.pdf
+ER  - 
+
+TY  - JOUR
+TI  - Hybrid safe–strong rules for efficient optimization in lasso-type problems
+AU  - Zeng, Yaohui
+AU  - Yang, Tianbao
+AU  - Breheny, Patrick
+T2  - Computational Statistics & Data Analysis
+AB  - The lasso model has been widely used for model selection in data mining, machine learning, and high-dimensional statistical analysis. However, with the ultrahigh-dimensional, large-scale data sets now collected in many real-world applications, it is important to develop algorithms to solve the lasso that efficiently scale up to problems of this size. Discarding features from certain steps of the algorithm is a powerful technique for increasing efficiency and addressing the Big Data challenge. This paper proposes a family of hybrid safe–strong rules (HSSR) which incorporate safe screening rules into the sequential strong rule (SSR) to remove unnecessary computational burden. Two instances of HSSR are presented, SSR-Dome and SSR-BEDPP, for the standard lasso problem. SSR-BEDPP is further extended to the elastic net and group lasso problems to demonstrate the generalizability of the hybrid screening idea. Extensive numerical experiments with synthetic and real data sets are conducted for both the standard lasso and the group lasso problems. Results show that the proposed hybrid rules can substantially outperform existing state-of-the-art rules.
+DA  - 2021/01/01/
+PY  - 2021
+DO  - 10.1016/j.csda.2020.107063
+DP  - ScienceDirect
+VL  - 153
+SP  - 107063
+J2  - Computational Statistics & Data Analysis
+LA  - en
+SN  - 0167-9473
+UR  - http://www.sciencedirect.com/science/article/pii/S0167947320301547
+Y2  - 2020/09/08/08:12:20
+L1  - https://pdf.sciencedirectassets.com/271708/1-s2.0-S0167947320X00107/1-s2.0-S0167947320301547/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIB1%2FWA9EPDuqsQkLRNpQZe7sTEtY801ebmU99U7NS58WAiEA89EZoQ53seK20%2FC31kO8hE83Dk96fvrjtiqXSm6WhIoqtAMIKBADGgwwNTkwMDM1NDY4NjUiDBXfQM01Cv6sJtAk5yqRAydYDp5zOsG1HxNWRhiIO%2FB3N0NaOz9x0PpiQYF7LIXSsS2FLlC%2B%2FmCpUZ3qP3UUa6sU2TxKIeDyYY3uq9FOBHl76OHhSrnm2JLqP%2Bv0%2FQMHXAvplUOnKGq%2BmHHkXdDwUMtw0KxXm64H0g72vmJ9EXGI8icr2NeARmmQgquQ3ah48VNLxEkYyuq5CJ%2BV0XcS5fDcMcABWiRVVmfb5pYFdpZwkrAi8y1sTKFjEq3opaIAfBjNYraJgJtrfZhNmTVmamjKHI5%2F7Eb5Xj5i1DLB3lGMQ1%2FgdtLGiCrxG%2ByY7sAVFL%2BoPOolHPcOkpvPzGfwuTsstuvlAxIiSw6B5%2B7qzJRgE8pU94FEJktDHdUakOrTeqvJRMAU%2BeDLYzeEgGF0fTgjkSsaMibBi%2F42P1p3ZHo%2FxeL3gFVZxCVqduLxvykmIXuo1WwxwcU%2BYHDr8OzaKQEs%2BOQRaDxZt81OxiuAXN2IeeRvl1E42le6fLsmarfgmjOUGn%2FkhmVrK59LsIbG6M9rd4KI5zZiOHH5iQxWUp5qMJPZ3PoFOusBpUdADIe8tiiY0D5ni3frSyoCieQY1RwsEP2%2F2MVVRbEJdf0dHPbthpLMQQ%2Bw6C1UDdF4zNxg6QLVWoopdEeBE%2B7OA7HxeMGDosxD%2BtxnTL0gFnhqwukaGUVx8R74R2VPMe5oxUS0d5y6E7JKaU79lWpRj5NJgl2HnRsLN6JmGC6qwJXgAUBski%2F7mamDD3R%2BW83jN1txbN6IU1Dq25%2B%2FVyktn0nQIsHMqYpIvXP5NqizRMKqU86t3C1zHAtU2gM0flVBqSRo73BT7e9ZsatRwzLopEd%2Fg9V56ojkDF8IBZVV3wayXKYxIrOkag%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200908T081219Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY7N3L2QBP%2F20200908%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb4cfb126abb68bdfb5f245ae4c9cd6a310c22e120ead8153b948ccbe2313a93&hash=34dc0d7dd3a5408c8270910d4502adb4a6cd22cbcb0d21932fb25ec62737fb62&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0167947320301547&tid=spdf-0134ddcd-9b12-4b5e-b889-8f650e022225&sid=cb49c0f478bb1244ed0b1d87d750e4094977gxrqb&type=client
+L2  - https://www.sciencedirect.com/science/article/pii/S0167947320301547
+KW  - large-scale sparse learning
+KW  - Lasso screening
+KW  - pathwise coordinate descent
+KW  - strong rules
+ER  - 
+
+TY  - RPRT
+TI  - Sparse index clones via the sorted L1-norm
+AU  - Kremer, Philipp
+AU  - Brzyski, Damian
+AU  - Bogdan, Malgorzata
+AU  - Paterlini, Sandra
+AB  - Index tracking and hedge fund replication aim at cloning the return time series properties of a given benchmark, by either using only a subset of its original constituents or by a set of risk factors. In this paper, we propose a model that relies on the Sorted L1 Penalized Estimator, called SLOPE, for index tracking and hedge fund replication. SLOPE is capable of not only providing sparsity but also to form groups among assets depending on their partial correlation with the index or the hedge fund return times series. The grouping structure can then be exploited to create individual investment strategies that allow building portfolios with a smaller number of active positions, but still comparable tracking properties. Considering equity index data over the period from December 2004 to January 2016 and hedge fund returns from June 1994 to July 2017, we show that the SLOPE based approaches can often outperform state-of-the-art non-convex approaches.
+CY  - Rochester, NY
+DA  - 2019/06/29/
+PY  - 2019
+DP  - papers.ssrn.com
+SP  - 1
+EP  - 30
+LA  - en
+M3  - SSRN Scholarly Paper
+PB  - Social Science Research Network
+SN  - ID 3412061
+UR  - https://papers.ssrn.com/abstract=3412061
+Y2  - 2020/05/07/12:17:56
+L2  - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3412061
+KW  - SLOPE
+KW  - Hedge Fund Clones
+KW  - Index Tracking
+KW  - Regularization
+ER  - 
+
+TY  - JOUR
+TI  - Ghost QTL and hotspots in experimental crosses - novel solution by mixed model with nonzero mean
+AU  - Szulc, Piotr A.
+AU  - Wallin, Jonas
+AU  - Bogdan, Małgorzata
+AU  - Doerge, R. W.
+AU  - Siegmund, David O.
+T2  - bioRxiv
+AB  - <h3>Abstract</h3> <p>“Ghost-QTL” are the false discoveries in QTL mapping, that arise due to the “accumulation” of the polygenic effects, uniformly distributed over the genome. The locations on the chromosome which are strongly correlated with the summary polygenic effect depend on a specific sample correlation structure determined by the genotype at all loci. During the analysis of e-QTL data or recombinant inbred lines this correlation structure is preserved for all traits under consideration, and may lead to the so called “hot-spots” via the detection of the summary polygenic effect at exactly the same positions for most of the considered traits. We illustrate that the problem can be solved by the application of the extended mixed effect model, where the random effects are allowed to have a nonzero mean. We provide formulas for estimating the thresholds for the corresponding t-test statistics and use them in the stepwise selection strategy, which allows for a simultaneous detection of several QTL. Extensive simulation studies illustrate that our approach allows to eliminate ghost-QTL/false hot spot effects, while preserving a high power of detection of true QTL effects.</p>
+DA  - 2019/10/31/
+PY  - 2019
+DO  - 10.1101/825562
+DP  - www.biorxiv.org
+SP  - 825562
+LA  - en
+UR  - https://www.biorxiv.org/content/10.1101/825562v1
+Y2  - 2020/05/05/06:00:19
+L1  - https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825562.full.pdf
+L2  - https://www.biorxiv.org/content/10.1101/825562v1
+ER  - 
+
+TY  - COMP
+TI  - SLOPE: Sorted L1 penalized estimation
+AU  - Larsson, Johan
+AU  - Wallin, Jonas
+AU  - Bogdan, Malgorzata
+AU  - van den Berg, Ewout
+AU  - Sabatti, Chiara
+AU  - Candes, Emmanuel
+AU  - Patterson, Evan
+AU  - Su, Weijie
+DA  - 2020/04/16/
+PY  - 2020
+ET  - 0.2.1
+LA  - R
+M1  - Linux, OSX, Windows
+UR  - https://CRAN.R-project.org/package=SLOPE
+N1  - R package version 0.1.3.9000
+ER  - 
+
+TY  - JOUR
+TI  - Sure independence screening for ultrahigh dimensional feature space
+AU  - Fan, Jianqing
+AU  - Lv, Jinchi
+T2  - Journal of the Royal Statistical Society: Series B (Statistical Methodology)
+AB  - Summary. Variable selection plays an important role in high dimensional statistical modelling which nowadays appears in many areas and is key to various scientific discoveries. For problems of large scale or dimensionality p, accuracy of estimation and computational cost are two top concerns. Recently, Candes and Tao have proposed the Dantzig selector using L1-regularization and showed that it achieves the ideal risk up to a logarithmic factor log (p). Their innovative procedure and remarkable result are challenged when the dimensionality is ultrahigh as the factor log (p) can be large and their uniform uncertainty principle can fail. Motivated by these concerns, we introduce the concept of sure screening and propose a sure screening method that is based on correlation learning, called sure independence screening, to reduce dimensionality from high to a moderate scale that is below the sample size. In a fairly general asymptotic framework, correlation learning is shown to have the sure screening property for even exponentially growing dimensionality. As a methodological extension, iterative sure independence screening is also proposed to enhance its finite sample performance. With dimension reduced accurately from high to below sample size, variable selection can be improved on both speed and accuracy, and can then be accomplished by a well-developed method such as smoothly clipped absolute deviation, the Dantzig selector, lasso or adaptive lasso. The connections between these penalized least squares methods are also elucidated.
+DA  - 2008///
+PY  - 2008
+DO  - 10.1111/j.1467-9868.2008.00674.x
+DP  - Wiley Online Library
+VL  - 70
+IS  - 5
+SP  - 849
+EP  - 911
+LA  - en
+SN  - 1467-9868
+UR  - https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2008.00674.x
+Y2  - 2020/03/09/15:05:14
+L1  - https://rss.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1467-9868.2008.00674.x
+L2  - https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1467-9868.2008.00674.x
+KW  - Lasso
+KW  - Variable selection
+KW  - Sure screening
+KW  - Adaptive lasso
+KW  - Dantzig selector
+KW  - Dimensionality reduction
+KW  - Oracle estimator
+KW  - Smoothly clipped absolute deviation
+KW  - Sure independence screening
+ER  - 
+
+TY  - JOUR
+TI  - LIBSVM: a library for support vector machines
+AU  - Chang, Chih-chung
+AU  - Lin, Chih-jen
+T2  - ACM Transactions on Intelligent Systems and Technology
+AB  - LIBSVM is a library for Support Vector Machines (SVMs). We have been actively developing this package since the year 2000. The goal is to help users to easily apply SVM to their applications. LIBSVM has gained wide popularity in machine learning and many other areas. In this article, we present all implementation details of LIBSVM. Issues such as solving SVM optimization problems, theoretical convergence, multi-class classification, probability estimates, and parameter selection are discussed in detail. Classification, LIBSVM, optimization, regression, support vector ma-Keywords:
+DA  - 2011/05//
+PY  - 2011
+DO  - 10.1145/1961189.1961199
+DP  - CiteSeer
+VL  - 2
+IS  - 3
+SP  - 27:1
+EP  - 27:27
+ST  - LIBSVM
+L1  - http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=847F37DA79B6A0792B958D0A645DC260?doi=10.1.1.309.2963&rep=rep1&type=pdf
+L2  - http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.309.2963
+ER  - 
+
+TY  - CONF
+TI  - Ordered weighted L1 regularized regression with strongly correlated covariates: theoretical aspects
+AU  - Figueiredo, Mario
+AU  - Nowak, Robert
+T2  - Artificial Intelligence and Statistics
+AB  - This paper studies the ordered weighted L1 (OWL) family of regularizers for sparse linear regression with strongly correlated covariates.  We prove sufficient conditions for clustering correlated c...
+C3  - Artificial Intelligence and Statistics
+DA  - 2016/05/02/
+PY  - 2016
+DP  - proceedings.mlr.press
+SP  - 930
+EP  - 938
+LA  - en
+ST  - Ordered Weighted L1 Regularized Regression with Strongly Correlated Covariates
+UR  - http://proceedings.mlr.press/v51/figueiredo16.html
+Y2  - 2019/11/05/13:43:57
+L1  - http://proceedings.mlr.press/v51/figueiredo16.pdf
+L2  - http://proceedings.mlr.press/v51/figueiredo16.html
+ER  - 
+
+TY  - JOUR
+TI  - Sparse estimation with strongly correlated variables using ordered weighted L1 regularization
+AU  - Figueiredo, Mario A. T.
+AU  - Nowak, Robert D.
+T2  - arXiv:1409.4005 [stat]
+AB  - This paper studies ordered weighted L1 (OWL) norm regularization for sparse estimation problems with strongly correlated variables. We prove sufficient conditions for clustering based on the correlation/colinearity of variables using the OWL norm, of which the so-called OSCAR is a particular case. Our results extend previous ones for OSCAR in several ways: for the squared error loss, our conditions hold for the more general OWL norm and under weaker assumptions; we also establish clustering conditions for the absolute error loss, which is, as far as we know, a novel result. Furthermore, we characterize the statistical performance of OWL norm regularization for generative models in which certain clusters of regression variables are strongly (even perfectly) correlated, but variables in different clusters are uncorrelated. We show that if the true p-dimensional signal generating the data involves only s of the clusters, then O(s log p) samples suffice to accurately estimate the signal, regardless of the number of coefficients within the clusters. The estimation of s-sparse signals with completely independent variables requires just as many measurements. In other words, using the OWL we pay no price (in terms of the number of measurements) for the presence of strongly correlated variables.
+DA  - 2014/09/13/
+PY  - 2014
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1409.4005
+Y2  - 2019/11/05/13:44:41
+L1  - https://arxiv.org/pdf/1409.4005.pdf
+L2  - https://arxiv.org/abs/1409.4005
+KW  - Statistics - Machine Learning
+ER  - 
+
+TY  - JOUR
+TI  - Efficient feature screening for lasso-type problems via hybrid safe-strong Rules
+AU  - Zeng, Yaohui
+AU  - Yang, Tianbao
+AU  - Breheny, Patrick
+T2  - arXiv:1704.08742 [stat]
+AB  - The lasso model has been widely used for model selection in data mining, machine learning, and high-dimensional statistical analysis. However, due to the ultrahigh-dimensional, large-scale data sets collected in many real-world applications, it remains challenging to solve the lasso problems even with state-of-the-art algorithms. Feature screening is a powerful technique for addressing the Big Data challenge by discarding inactive features from the lasso optimization. In this paper, we propose a family of hybrid safe-strong rules (HSSR) which incorporate safe screening rules into the sequential strong rule (SSR) to remove unnecessary computational burden. In particular, we present two instances of HSSR, namely SSR-Dome and SSR-BEDPP, for the standard lasso problem. We further extend SSR-BEDPP to the elastic net and group lasso problems to demonstrate the generalizability of the hybrid screening idea. Extensive numerical experiments with synthetic and real data sets are conducted for both the standard lasso and the group lasso problems. Results show that our proposed hybrid rules substantially outperform existing state-of-the-art rules.
+DA  - 2017/11/21/
+PY  - 2017
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1704.08742
+Y2  - 2020/02/21/08:28:38
+L1  - https://arxiv.org/pdf/1704.08742.pdf
+L2  - https://arxiv.org/abs/1704.08742
+N1  - Comment: 31 pages, 4 figures
+KW  - Statistics - Machine Learning
+KW  - Statistics - Computation
+ER  - 
+
+TY  - JOUR
+TI  - The ordered weighted l1 norm: atomic formulation, projections, and algorithms
+AU  - Zeng, Xiangrong
+AU  - Figueiredo, Mário A. T.
+T2  - arXiv:1409.4271 [cs, math]
+AB  - The ordered weighted $\ell_1$ norm (OWL) was recently proposed, with two different motivations: its good statistical properties as a sparsity promoting regularizer; the fact that it generalizes the so-called {\it octagonal shrinkage and clustering algorithm for regression} (OSCAR), which has the ability to cluster/group regression variables that are highly correlated. This paper contains several contributions to the study and application of OWL regularization: the derivation of the atomic formulation of the OWL norm; the derivation of the dual of the OWL norm, based on its atomic formulation; a new and simpler derivation of the proximity operator of the OWL norm; an efficient scheme to compute the Euclidean projection onto an OWL ball; the instantiation of the conditional gradient (CG, also known as Frank-Wolfe) algorithm for linear regression problems under OWL regularization; the instantiation of accelerated projected gradient algorithms for the same class of problems. Finally, a set of experiments give evidence that accelerated projected gradient algorithms are considerably faster than CG, for the class of problems considered.
+DA  - 2015/04/10/
+PY  - 2015
+DP  - arXiv.org
+ST  - The Ordered Weighted L1 Norm
+UR  - http://arxiv.org/abs/1409.4271
+Y2  - 2019/11/22/14:08:52
+L1  - https://arxiv.org/pdf/1409.4271.pdf
+L2  - https://arxiv.org/abs/1409.4271
+N1  - Comment: 13 pages, 17 figures. The latest version of this paper was submitted to a journal
+KW  - Computer Science - Data Structures and Algorithms
+KW  - Computer Science - Machine Learning
+KW  - Computer Science - Computer Vision and Pattern Recognition
+KW  - Computer Science - Information Theory
+ER  - 
+
+TY  - JOUR
+TI  - Decreasing weighted sorted l1 regularization
+AU  - Zeng, Xiangrong
+AU  - Figueiredo, Mário A. T.
+T2  - IEEE Signal Processing Letters
+AB  - We consider a new family of regularizers, termed weighted sorted ℓ1 norms (WSL1), which generalizes the recently introduced octagonal shrinkage and clustering algorithm for regression (OSCAR) and also contains the ℓ1 and ℓ∞ norms as particular instances. We focus on a special case of the WSL1, the decreasing WSL1 (DWSL1), where the elements of the argument vector are sorted in non-increasing order and the weights are also non-increasing. In this letter, after showing that the DWSL1 is indeed a norm, we derive two key tools for its use as a regularizer: the dual norm and the Moreau proximity operator.
+DA  - 2014/10//
+PY  - 2014
+DO  - 10.1109/LSP.2014.2331977
+DP  - IEEE Xplore
+VL  - 21
+IS  - 10
+SP  - 1240
+EP  - 1244
+SN  - 1070-9908, 1558-2361
+L1  - https://ieeexplore.ieee.org/ielx7/97/6824896/06840355.pdf?tp=&arnumber=6840355&isnumber=6824896&ref=aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzY4NDAzNTU=
+L2  - https://ieeexplore.ieee.org/document/6840355
+KW  - Linear regression
+KW  - Signal processing algorithms
+KW  - Vectors
+KW  - Clustering algorithms
+KW  - octagonal shrinkage and clustering algorithm for regression
+KW  - pattern clustering
+KW  - regression analysis
+KW  - Abstracts
+KW  - argument vector
+KW  - decreasing weighted sorted ℓ1 regularization
+KW  - dual norm
+KW  - DWSL1
+KW  - ℓ∞ norms
+KW  - Materials
+KW  - Moreau proximity operator
+KW  - OSCAR
+KW  - Proximal splitting algorithms
+KW  - sorted $\ell_1$ norm
+KW  - Sorting
+KW  - structured sparsity
+ER  - 
+
+TY  - JOUR
+TI  - On the LASSO and its dual
+AU  - Osborne, Michael R.
+AU  - Presnell, Brett
+AU  - Turlach, Berwin A.
+T2  - Journal of Computational and Graphical Statistics
+AB  - Proposed by Tibshirani, the least absolute shrinkage and selection operator (LASSO) estimates a vector of regression coefficients by minimizing the residual sum of squares subject to a constraint on the l<sup>1</sup>-norm of the coefficient vector. The LASSO estimator typically has one or more zero elements and thus shares characteristics of both shrinkage estimation and variable selection. In this article we treat the LASSO as a convex programming problem and derive its dual. Consideration of the primal and dual problems together leads to important new insights into the characteristics of the LASSO estimator and to an improved method for estimating its covariance matrix. Using these results we also develop an efficient algorithm for computing LASSO estimates which is usable even in cases where the number of regressors exceeds the number of observations. An S-Plus library based on this algorithm is available from StatLib.
+DA  - 2000///
+PY  - 2000
+DO  - 10.2307/1390657
+DP  - JSTOR
+VL  - 9
+IS  - 2
+SP  - 319
+EP  - 337
+SN  - 1061-8600
+UR  - https://www.jstor.org/stable/1390657
+DB  - JSTOR
+Y2  - 2019/10/30/12:09:13
+L1  - https://www.jstor.org/stable/pdfplus/10.2307/1390657.pdf?acceptTC=true
+ER  - 
+
+TY  - JOUR
+TI  - Solving the OSCAR and SLOPE models using a semismooth Newton-based augmented Lagrangian method
+AU  - Luo, Ziyan
+AU  - Sun, Defeng
+AU  - Toh, Kim-Chuan
+AU  - Xiu, Naihua
+T2  - Journal of Machine Learning Research
+DA  - 2019///
+PY  - 2019
+DP  - www.jmlr.org
+VL  - 20
+IS  - 106
+SP  - 1
+EP  - 25
+LA  - en
+SN  - 1533-7928
+UR  - http://jmlr.org/papers/v20/18-172.html
+Y2  - 2020/03/06/13:56:00
+L1  - http://jmlr.org/papers/volume20/18-172/18-172.pdf
+L2  - http://www.jmlr.org/beta/papers/v20/18-172.html
+ER  - 
+
+TY  - BOOK
+TI  - Convex optimization
+AU  - Boyd, Stephen
+AU  - Vandenberghe, Lieven
+CY  - New York, NY, USA
+DA  - 2004///
+PY  - 2004
+DP  - ACM Digital Library
+ET  - 1
+PB  - Cambridge University Press
+SN  - 978-0-521-83378-3
+ER  - 
+
+TY  - JOUR
+TI  - Simultaneous regression shrinkage, variable selection, and supervised clustering of predictors with OSCAR
+AU  - Bondell, Howard D.
+AU  - Reich, Brian J.
+T2  - Biometrics
+AB  - Variable selection can be challenging, particularly in situations with a large number of predictors with possibly high correlations, such as gene expression data. In this article, a new method called the OSCAR (octagonal shrinkage and clustering algorithm for regression) is proposed to simultaneously select variables while grouping them into predictive clusters. In addition to improving prediction accuracy and interpretation, these resulting groups can then be investigated further to discover what contributes to the group having a similar behavior. The technique is based on penalized least squares with a geometrically intuitive penalty function that shrinks some coefficients to exactly zero. Additionally, this penalty yields exact equality of some coefficients, encouraging correlated predictors that have a similar effect on the response to form predictive clusters represented by a single coefficient. The proposed procedure is shown to compare favorably to the existing shrinkage and variable selection techniques in terms of both prediction error and model complexity, while yielding the additional grouping information.
+DA  - 2008///
+PY  - 2008
+DO  - 10.1111/j.1541-0420.2007.00843.x
+DP  - JSTOR
+VL  - 64
+IS  - 1
+SP  - 115
+EP  - 123
+SN  - 0006-341X
+UR  - https://www.jstor.org/stable/25502027
+DB  - JSTOR
+Y2  - 2020/01/23/07:37:02
+L1  - http://www.jstor.org/stable/pdfplus/10.2307/25502027.pdf?acceptTC=true
+KW  - regression
+KW  - convex-optimization
+KW  - slope
+ER  - 
+
+TY  - JOUR
+TI  - Algorithmic analysis and statistical estimation of SLOPE via approximate message passing
+AU  - Bu, Zhiqi
+AU  - Klusowski, Jason
+AU  - Rush, Cynthia
+AU  - Su, Weijie
+T2  - arXiv:1907.07502 [cs, eess, math, stat]
+AB  - SLOPE is a relatively new convex optimization procedure for high-dimensional linear regression via the sorted l1 penalty: the larger the rank of the fitted coefficient, the larger the penalty. This non-separable penalty renders many existing techniques invalid or inconclusive in analyzing the SLOPE solution. In this paper, we develop an asymptotically exact characterization of the SLOPE solution under Gaussian random designs through solving the SLOPE problem using approximate message passing (AMP). This algorithmic approach allows us to approximate the SLOPE solution via the much more amenable AMP iterates. Explicitly, we characterize the asymptotic dynamics of the AMP iterates relying on a recently developed state evolution analysis for non-separable penalties, thereby overcoming the difficulty caused by the sorted l1 penalty. Moreover, we prove that the AMP iterates converge to the SLOPE solution in an asymptotic sense, and numerical simulations show that the convergence is surprisingly fast. Our proof rests on a novel technique that specifically leverages the SLOPE problem. In contrast to prior literature, our work not only yields an asymptotically sharp analysis but also offers an algorithmic, flexible, and constructive approach to understanding the SLOPE problem.
+DA  - 2019/07/17/
+PY  - 2019
+DO  - https://onlinelibrary-wiley-com.ludwig.lub.lu.se/doi/full/10.1111/j.1541-0420.2007.00843.x
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1907.07502
+Y2  - 2019/08/22/14:13:45
+L1  - http://www.arxiv.org/pdf/1907.07502.pdf
+L2  - https://arxiv.org/abs/1907.07502
+KW  - Computer Science - Machine Learning
+KW  - Statistics - Machine Learning
+KW  - Mathematics - Statistics Theory
+KW  - convex-optimization
+KW  - slope
+KW  - Electrical Engineering and Systems Science - Signal Processing
+KW  - sparse-regression
+ER  - 
+
+TY  - JOUR
+TI  - Safe feature elimination for the LASSO and sparse supervised learning problems
+AU  - El Ghaoui, Laurent
+AU  - Viallon, Vivian
+AU  - Rabbani, Tarek
+T2  - arXiv:1009.4219 [cs, math]
+AB  - We describe a fast method to eliminate features (variables) in l1 -penalized least-square regression (or LASSO) problems. The elimination of features leads to a potentially substantial reduction in running time, specially for large values of the penalty parameter. Our method is not heuristic: it only eliminates features that are guaranteed to be absent after solving the LASSO problem. The feature elimination step is easy to parallelize and can test each feature for elimination independently. Moreover, the computational effort of our method is negligible compared to that of solving the LASSO problem - roughly it is the same as single gradient step. Our method extends the scope of existing LASSO algorithms to treat larger data sets, previously out of their reach. We show how our method can be extended to general l1 -penalized convex problems and present preliminary results for the Sparse Support Vector Machine and Logistic Regression problems.
+DA  - 2010/09/21/
+PY  - 2010
+DP  - arXiv.org
+UR  - http://arxiv.org/abs/1009.4219
+Y2  - 2018/03/21/20:42:29
+L1  - http://www.arxiv.org/pdf/1009.4219.pdf
+L2  - https://arxiv.org/abs/1009.4219
+N1  - <p>Comment: Submitted to JMLR in April 2011</p>
+ER  - 
+
+TY  - CONF
+TI  - Blitz: a principled meta-algorithm for scaling sparse optimization
+AU  - Johnson, Tyler B
+AU  - Guestrin, Carlos
+T2  - International  Conference  on  Machine Learning
+AB  - By reducing optimization to a sequence of small subproblems, working set methods achieve fast convergence times for many challenging problems. Despite excellent performance, theoretical understanding of working sets is limited, and implementations often resort to heuristics to determine subproblem size, makeup, and stopping criteria. We propose BLITZ, a fast working set algorithm accompanied by useful guarantees. Making no assumptions on data, our theory relates subproblem size to progress toward convergence. This result motivates methods for optimizing algorithmic parameters and discarding irrelevant variables as iterations progress. Applied to 1-regularized learning, BLITZ convincingly outperforms existing solvers in sequential, limited-memory, and distributed settings. BLITZ is not speciﬁc to 1-regularized learning, making the algorithm relevant to many applications involving sparsity or constraints.
+C1  - Lille, France
+C3  - Proceedings  of  the 32nd International  Conference  on  Machine Learning
+DA  - 2015///
+PY  - 2015
+DP  - Zotero
+VL  - 37
+SP  - 9
+LA  - en
+PB  - JMLR: W&CP
+UR  - http://proceedings.mlr.press/v37/johnson15.pdf
+L1  - http://proceedings.mlr.press/v37/johnson15.pdf
+ER  - 
+
+TY  - JOUR
+TI  - Genome-wide association analysis by lasso penalized logistic regression
+AU  - Wu, Tong Tong
+AU  - Chen, Yi Fang
+AU  - Hastie, Trevor
+AU  - Sobel, Eric
+AU  - Lange, Kenneth
+T2  - Bioinformatics (Oxford, England)
+AB  - MOTIVATION: In ordinary regression, imposition of a lasso penalty makes continuous model selection straightforward. Lasso penalized regression is particularly advantageous when the number of predictors far exceeds the number of observations.
+METHOD: The present article evaluates the performance of lasso penalized logistic regression in case-control disease gene mapping with a large number of SNPs (single nucleotide polymorphisms) predictors. The strength of the lasso penalty can be tuned to select a predetermined number of the most relevant SNPs and other predictors. For a given value of the tuning constant, the penalized likelihood is quickly maximized by cyclic coordinate ascent. Once the most potent marginal predictors are identified, their two-way and higher order interactions can also be examined by lasso penalized logistic regression.
+RESULTS: This strategy is tested on both simulated and real data. Our findings on coeliac disease replicate the previous SNP results and shed light on possible interactions among the SNPs.
+AVAILABILITY: The software discussed is available in Mendel 9.0 at the UCLA Human Genetics web site.
+SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.
+DA  - 2009/03/15/
+PY  - 2009
+DO  - 10.1093/bioinformatics/btp041
+DP  - PubMed
+VL  - 25
+IS  - 6
+SP  - 714
+EP  - 721
+J2  - Bioinformatics
+LA  - eng
+SN  - 1367-4811
+L1  - https://academic.oup.com/bioinformatics/article-pdf/25/6/714/16891845/btp041.pdf
+L2  - http://www.ncbi.nlm.nih.gov/pubmed/19176549
+KW  - Logistic Models
+KW  - Internet
+KW  - Software
+KW  - Computational Biology
+KW  - Genome-Wide Association Study
+KW  - Polymorphism, Single Nucleotide
+ER  - 
+
+TY  - JOUR
+TI  - Regression shrinkage and selection via the lasso
+AU  - Tibshirani, Robert
+T2  - Journal of the Royal Statistical Society: Series B (Methodological)
+AB  - We propose a new method for estimation in linear models. The `lasso' minimizes the residual sum of squares subject to the sum of the absolute value of the coefficients being less than a constant. Because of the nature of this constraint it tends to produce some coefficients that are exactly 0 and hence gives interpretable models. Our simulation studies suggest that the lasso enjoys some of the favourable properties of both subset selection and ridge regression. It produces interpretable models like subset selection and exhibits the stability of ridge regression. There is also an interesting relationship with recent work in adaptive function estimation by Donoho and Johnstone. The lasso idea is quite general and can be applied in a variety of statistical models: extensions to generalized regression models and tree-based models are briefly described.
+DA  - 1996///
+PY  - 1996
+DP  - JSTOR
+VL  - 58
+IS  - 1
+SP  - 267
+EP  - 288
+SN  - 0035-9246
+UR  - http://www.jstor.org/stable/2346178
+Y2  - 2018/03/12/08:45:46
+ER  - 
+

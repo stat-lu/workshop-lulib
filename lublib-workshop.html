@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Workshop i Datavisualisering</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Johan Larsson" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center, title-slide
+
+# Workshop i Datavisualisering
+### Johan Larsson
+### Statistiska institutionen, Lunds Universitet
+
+---
+
+
+
+
+## Dagens upplägg
+
+### 09:00 - 10:30
+
+- Grunder
+- Visualisering av proportioner och antal
+- Visualisering av numerisk data
+- Kartor
+
+### Paus
+
+### 10:45 - 12:00
+
+- Nätverksvisualiseringar med VOSviewer
+
+---
+
+## Varför visualisera data?
+
+- Visualisering är vårt främsta verktyg för att förstå data.
+
+---
+
+## Beståndsdelar
+
+.pull-left[
+- Data
+- Geometri
+- Titlar
+- Axlar
+- Legender (eventuellt)
+- Figurbeskrivning (eventuellt)
+]
+
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-1-1.png" alt="Fuel Consumption in miles per gallon and horsepower for a set of cars from the 1974 Motor Trend US magazine." width="345.6" /&gt;
+&lt;p class="caption"&gt;Fuel Consumption in miles per gallon and horsepower for a set of cars from the 1974 Motor Trend US magazine.&lt;/p&gt;
+&lt;/div&gt;
+]
+
+
+---
+
+## Principer
+
+- Föredra multivariata visualiseringar
+
+--
+
+- Glöm inte bort läsaren/åhöraren!
+
+--
+
+- Story-telling
+
+--
+
+- Använd "bläcket" på **data**
+
+
+
+---
+ 
+## Data och skalnivåer
+
+Data kommer i många olika typer:
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Skala &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Exempel &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Värden &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Nominal &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Kön &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Man/Kvinna &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Ordinal &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Utbildningsnivå &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Grundskola, Gymnasial, Högskola &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Intervall &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Temperatur i Celsius &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; -1, 0, 1, 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Kvot &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Längd &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 0, 0.5, 1, 1.5 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+--
+
+Numerisk data (intervall och kvot) kan också delas upp i diskret data (heltal)
+och kontinuerlig (reell) data
+
+---
+
+## Google Data Studio
+
+Enkelt och gratis men inte speciellt kraftfullt.
+
+Mer seriösa projekt kräver mer avancerade program, exempelvis R (ggplot2),
+Julia, eller python (matplotlib).
+
+
+### Exempel: Titanic
+
+Vem överlevde Titanics haveri?
+
+Ladda ner `titanic.csv` från workshop-hemsidan
+[stat-lu.github.io/lu-workshop](stat-lu.github.io/lu-workshop) och importera in
+i Google Kalkylark (Sheets).
+
+&lt;img src="images/titanic.png" width="355" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Uppgift 1: Utforska 
+
+&lt;img src="images/sheets-import.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+För varje variabel (kolumn) beskriv vilket **skalnivå** de har.
+
+---
+
+### Uppgift 2: Importera till Google Data Studio
+
+&lt;img src="images/studio-import.gif" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Stapeldiagram
+
+.pull-left[
+- Enkelt, lättförståeligt
+- Visualiserar **antal** eller **proportioner**
+
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-6-1.png" width="237.6" style="display: block; margin: auto;" /&gt;
+
+### Olika typer
+
+- Grupperade eller staplade
+- Proportion eller antal
+]
+
+.pull-right[
+&lt;img src="images/stapeldiagram-typer.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+### Stapeldiagram i Data Studio
+
+.pull-left[
+#### Dimension
+
+x-axeln
+
+#### Uppdelningsinformation
+
+färg
+
+#### Mätvärde
+
+transformation (antal, summa, medelvärde)
+]
+
+
+.pull-right[
+&lt;img src="images/stapeldiagram.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+### Uppgift 3: Stapeldiagram
+
+#### Huvuduppgift
+
+Använd stapeldiagram för att visualisera hur överlevnad på Titanic varierar
+mellan könen och de olika klasserna på fartyget.
+
+- Testa både grupperade stapeldiagram och staplade stapeldiagram.
+- Prova visualisera både proportioner och antal.
+- Vilken variabel ska kopplas till *dimension* och vilken till 
+  *uppdelningsdimension*? Prova olika alternativ!
+
+Vad är era slutsatser?
+
+Tips: Enklaste sättet att byta mellan diagramtyper är via *STIL*-fliken.
+
+#### Bonusuppgift
+
+- Ändra färg på staplarna och byt från liggande till stående staplar.
+- Gör enskilda diagram för de olika passagerarklasserna via *Filter* och 
+  visualisera uppdelningen mellan kön inom varje.
+
+---
+
+## Spridningsdiagram
+
+- Standardvalet för visualiseringar av två variabler.
+- Fundera över beroendet mellan de variablerna du ska visualisera:
+  om det finns ett tydligt "utfall", placera det på y-axeln.
+  
+.pull-left[
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-9-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-10-1.png" width="345.6" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+### Numerisk data: Däggdjur, hjärnstorlek och sömn
+
+- Gå till workshopshemsidan och ladda ner datasetet `mammals.csv`.
+- Importera det till Google Sheets
+- Importera det till Google Data Studio
+
+#### Variabler
+
+- `bodywt`: kroppsvikt
+- `brainwt`: hjärnvikt
+- `genus`: släkte
+- `order`: ordning
+- `sleep_rem`: längd på REM-sömn
+- `sleep_total`: längd på sömn
+- `vore`: "matvanor"
+
+---
+
+### Spridningsdiagram i Data Studio
+
+Välj *Lägg till ett diagram* följt av *spridningsdiagram*.
+
+.pull-left[
+#### Dimension
+
+- variabel som särskiljer observationerna
+- kan användas för att aggregera information
+- ange `name` till att börja med
+
+#### Mätvärde X
+
+- variabel för x-axeln
+
+
+#### Mätvärde Y
+
+- variabel för y-axeln
+]
+
+.pull-right[
+&lt;img src="images/spridningsdiagram-mappings.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+### Uppgift 4: Spridningsdiagram
+
+#### Huvuduppgift
+
+- Gör spridningsdiagram mellan total sömn och hjärnvikt eller kroppsvikt.
+- Fundera över vilka variabler som ska vara på y- och x-axlarna.
+- Testa att ändra till log-skalor via *STIL*-fliken.
+- Ge axlarna korrekta titlar.
+
+Vad är slutsatserna? Hur ser sambanden ut mellan kroppsvikt, hjärnvikt och
+sömn?
+
+#### Bonusuppgift
+
+- Gör ett bubbeldiagram genom att koppla en variabel till 
+  *Värde för bubbelstorlek*. Hur lätt är det att avläsa värdena från 
+  bubblorna?
+- Aggregera data över matvanor (`vore`), `genus`, eller `order` genom att
+  byta variabel i *Dimension*.
+  - Ändra `SUM` brevid variabeln till något rimligare.
+
+---
+
+## Kartor
+
+Data har ofta en spatiell dimension, utnyttja det!
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-12-1.png" alt="Choropleth" width="345.6" /&gt;
+&lt;p class="caption"&gt;Choropleth&lt;/p&gt;
+&lt;/div&gt;
+
+]
+
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="lublib-workshop_files/figure-html/unnamed-chunk-13-1.png" alt="Bubbeldiagram" width="345.6" /&gt;
+&lt;p class="caption"&gt;Bubbeldiagram&lt;/p&gt;
+&lt;/div&gt;
+
+]
+
+---
+
+### Spatiell data: Fall av CoViD-19 i Europa
+
+- Gå till workshopshemsidan och ladda ner datasetet `covid.csv`.
+- Importera det till Google Sheets
+- Importera det till Google Data Studio
+
+#### Variabler
+
+- `country`
+- `date`: datum (ett för varje vecka)
+- `year`
+- `month`
+- `week`
+- `population`
+- `weekly_count`: antal fall vecka för vecka
+- `cumulative_count`: kumulativa fall
+- `*_prop`: proportionella mått
+
+---
+
+### Kartor i Data Studio
+
+
+Välj *Lägg till ett diagram* följt av *Geografiskt diagram*.
+
+.pull-left[
+#### Geografisk dimension/plats
+
+geografisk enhet (land, län, kommun)
+
+#### Mätvärde
+
+variabel att koppla till färg 
+
+#### Zoomområde
+
+zooma in kartan på ett särskilt område
+
+#### Standarddatumintervall
+
+filtrera ut ett datumintervall
+]
+
+.pull-right[
+&lt;img src="images/kartor-mappings.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+### Uppgift 5: Karta
+
+#### Huvuduppgift
+
+- Skapa en karta för proportionella antal fall av CoViD-19 hittills över
+  2021.
+- Zooma-in kartan på enbart Europa.
+- Justera färgskalan till något mer passande med tanke på datan.
+- Vilket land i Europa hade det högsta antalet nya fall (proportionerligt sett)
+  över hela tidsperioden?
+- Skapa två enskilda diagram: ett över 2020 och ett över 2021 och
+  placera dem sida vid sida för att jqmföra exempelvis det totala antalet fall.
+  
+#### Bonusuppgift
+
+- Skapa ett bubbeldiagram med hjälp av *Google Maps/Bubbelkarta*. Testa
+  olika kombinationer av variabler och koppla till både storlek på
+  bubblorna och färg.
+- Testa göra en choropleth med *Google Maps*.
+
+---
+
+## Nätverksdiagram
+
+Nätverksdiagram för bibliometrisk data: [VOSviewer](https://www.vosviewer.com)
+
+### Input
+
+- text (abstract, titlar)
+- bibliometrisk data (författare, citeringar, referenser, etc.)
+
+.pull-left[
+### Noder (Unit of Analysis)
+
+Varje nätverksdiagram är byggt upp av *noder*. Noden i diagrammet kan utgöras
+av olika objekt:
+
+- författare
+- organisation
+- artikel
+- etc
+]
+
+.pull-right[
+### Relatedness
+
+Kopplingen mellan varje nod (relatedness) bestäms av ett mått:
+
+- Co-authorship
+- Co-occurence
+- Citation
+- Bibliographic coupling
+- Co-citation
+]
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

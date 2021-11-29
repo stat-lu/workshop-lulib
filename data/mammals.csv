@@ -1,0 +1,44 @@
+name,genus,vore,order,sleep_total,sleep_rem,brainwt,bodywt
+Owl monkey,Aotus,omni,Primates,17,1.8,0.0155,0.48
+Greater short-tailed shrew,Blarina,omni,Soricomorpha,14.9,2.3,2.9e-4,0.019
+Cow,Bos,herbi,Artiodactyla,4,0.7,0.423,600
+Dog,Canis,carni,Carnivora,10.1,2.9,0.07,14
+Goat,Capri,herbi,Artiodactyla,5.3,0.6,0.115,33.5
+Guinea pig,Cavis,herbi,Rodentia,9.4,0.8,0.0055,0.728
+Chinchilla,Chinchilla,herbi,Rodentia,12.5,1.5,0.0064,0.42
+Star-nosed mole,Condylura,omni,Soricomorpha,10.3,2.2,0.001,0.06
+African giant pouched rat,Cricetomys,omni,Rodentia,8.3,2,0.0066,1
+Lesser short-tailed shrew,Cryptotis,omni,Soricomorpha,9.1,1.4,1.4e-4,0.005
+Long-nosed armadillo,Dasypus,carni,Cingulata,17.4,3.1,0.0108,3.5
+Tree hyrax,Dendrohyrax,herbi,Hyracoidea,5.3,0.5,0.0123,2.95
+North American Opossum,Didelphis,omni,Didelphimorphia,18,4.9,0.0063,1.7
+Big brown bat,Eptesicus,insecti,Chiroptera,19.7,3.9,3e-4,0.023
+Horse,Equus,herbi,Perissodactyla,2.9,0.6,0.655,521
+Donkey,Equus,herbi,Perissodactyla,3.1,0.4,0.419,187
+European hedgehog,Erinaceus,omni,Erinaceomorpha,10.1,3.5,0.0035,0.77
+Patas monkey,Erythrocebus,omni,Primates,10.9,1.1,0.115,10
+Domestic cat,Felis,carni,Carnivora,12.5,3.2,0.0256,3.3
+Galago,Galago,omni,Primates,9.8,1.1,0.005,0.2
+Gray seal,Haliochoerus,carni,Carnivora,6.2,1.5,0.325,85
+Gray hyrax,Heterohyrax,herbi,Hyracoidea,6.3,0.6,0.01227,2.625
+Human,Homo,omni,Primates,8,1.9,1.32,62
+Macaque,Macaca,omni,Primates,10.1,1.2,0.179,6.8
+Golden hamster,Mesocricetus,herbi,Rodentia,14.3,3.1,0.001,0.12
+House mouse,Mus,herbi,Rodentia,12.5,1.4,4e-4,0.022
+Little brown bat,Myotis,insecti,Chiroptera,19.9,2,2.5e-4,0.01
+Rabbit,Oryctolagus,herbi,Lagomorpha,8.4,0.9,0.0121,2.5
+Sheep,Ovis,herbi,Artiodactyla,3.8,0.6,0.175,55.5
+Chimpanzee,Pan,omni,Primates,9.7,1.4,0.44,52.2
+Baboon,Papio,omni,Primates,9.4,1,0.18,25.235
+Giant armadillo,Priodontes,insecti,Cingulata,18.1,6.1,0.081,60
+Laboratory rat,Rattus,herbi,Rodentia,13,2.4,0.0019,0.32
+Squirrel monkey,Saimiri,omni,Primates,9.6,1.4,0.02,0.743
+Eastern american mole,Scalopus,insecti,Soricomorpha,8.4,2.1,0.0012,0.075
+Cotton rat,Sigmodon,herbi,Rodentia,11.3,1.1,0.00118,0.148
+Thirteen-lined ground squirrel,Spermophilus,herbi,Rodentia,13.8,3.4,0.004,0.101
+Pig,Sus,omni,Artiodactyla,9.1,2.4,0.18,86.25
+Brazilian tapir,Tapirus,herbi,Perissodactyla,4.4,1,0.169,207.501
+Tenrec,Tenrec,omni,Afrosoricida,15.6,2.3,0.0026,0.9
+Tree shrew,Tupaia,omni,Scandentia,8.9,2.6,0.0025,0.104
+Genet,Genetta,carni,Carnivora,6.3,1.3,0.0175,2
+Red fox,Vulpes,carni,Carnivora,9.8,2.4,0.0504,4.23
