@@ -59,17 +59,17 @@ options(digits = 3)
 
 ## Dagens upplägg
 
-### 09:00 - 10:30
+### 09:00 - 10:00
 
 - Grunder
 - Visualisering av proportioner och antal
 - Visualisering av numerisk data
-- Kartor
 
 ### Paus
 
-### 10:45 - 12:00
+### 10:15 - 12:00
 
+- Kartor
 - Nätverksvisualiseringar med VOSviewer
 
 ---
